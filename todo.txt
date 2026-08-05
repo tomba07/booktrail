@@ -1,8 +1,10 @@
-Labels
+Properties:
+- Priority
+- Rating
+- Category/Genre
+- Quotes/Notes?
 
 Detail Page
-
-Categories
 
 Extend seed data
  - Walter Moers
