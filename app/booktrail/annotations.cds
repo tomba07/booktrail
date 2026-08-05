@@ -56,6 +56,7 @@ annotate service.Books with @(
         {
             $Type : 'UI.ReferenceFacet',
             Target : '@UI.DataPoint#Rating',
+            ![@UI.Hidden] : { $edmJson : { $Not : { $Path : 'rating' } } },
         },
     ],
     UI.FieldGroup #Status : {
@@ -70,6 +71,18 @@ annotate service.Books with @(
                 $Type : 'UI.DataField',
                 Label : 'Listened',
                 Value : listened,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'Priority',
+                Value : priority,
+                ![@UI.Hidden] : { $edmJson : { $Path : 'read' } },
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'Rating',
+                Value : rating,
+                ![@UI.Hidden] : true,
             },
         ],
     },
@@ -91,6 +104,12 @@ annotate service.Books with @(
             $Type : 'UI.DataField',
             Label : 'Author',
             Value : author,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : 'Priority',
+            Value : priority,
+            ![@UI.Hidden] : { $edmJson : { $Path : 'read' } },
         },
         {
             $Type : 'UI.DataField',

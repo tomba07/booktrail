@@ -152,7 +152,17 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Books"
+              "contextPath": "/Books",
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.FieldGroup#Status": {
+                  "fields": {
+                    "CustomRating": {
+                      "template": "com.mteschke.booktrail.booktrail.ext.RatingField",
+                      "label": "Rating"
+                    }
+                  }
+                }
+              }
             }
           }
         }

@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <RatingIndicator
+        maxValue="5"
+        value="{path: 'rating', type: 'sap.ui.model.odata.type.Decimal', formatOptions: {parseAsString: false}}"
+        visualMode="Half"
+        editable="{= ${ui>/isEditable} }"
+        class="sapUiSmallMarginTop" />
+</core:FragmentDefinition>

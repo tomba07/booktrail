@@ -6,5 +6,7 @@ RUN npm ci --omit=dev
 
 COPY . .
 
+RUN chmod +x entrypoint.sh
+
 EXPOSE 4004
-CMD ["npm", "start"]
+CMD ["./entrypoint.sh"]
