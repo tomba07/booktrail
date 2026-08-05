@@ -18,6 +18,9 @@ target/
 *.mtar
 mta_archives/
 
+# Deploy secrets
+deploy/.env
+
 # Other
 .DS_Store
 *.orig
