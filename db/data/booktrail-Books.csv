@@ -1,142 +1,142 @@
-ID,title,author,finished,audiobook
-1,Ready Player One,Ernest Cline,false
-2,The Golden Compass,Philip Pullman,false
-3,Slaughterhouse-Five,Kurt Vonnegut,false
-4,Diaspora,Greg Egan,false
-5,Stranger in a Strange Land,Robert A. Heinlein,false
-6,Dune,Frank Herbert,false
-7,Anna Karenina,Leo Tolstoy,false
-8,Père Goriot,Honoré de Balzac,false
-9,Atlas Shrugged,Ayn Rand,false
-10,Collected Fictions,Jorge Luis Borges,false
-11,Consider Phlebas,Iain M. Banks,true
-12,Surface Detail,Iain M. Banks,false
-13,The Player of Games,Iain M. Banks,false
-14,Project Hail Mary,Andy Weir,false
-15,The Three-Body Problem,Liu Cixin,false
-16,Siddhartha,Hermann Hesse,false
-17,The Metamorphosis,Franz Kafka,true
-18,Snow Crash,Neal Stephenson,false
-19,Infinite Jest,David Foster Wallace,false
-20,Bhagavad Gita,Ancient,false
-21,The Old Man and the Sea,Ernest Hemingway,true,true
-22,Notes from Underground,Fyodor Dostoevsky,false
-23,The Idiot,Fyodor Dostoevsky,true
-24,The Metamorphosis of Prime Intellect,Roger Williams,false
-25,Ubik,Philip K. Dick,false
-26,The Light Pirate,Lily Brooks-Dalton,false
-27,The Brothers Karamazov,Fyodor Dostoevsky,false
-28,Catch-22,Joseph Heller,false
-29,Out of the Silent Planet,C.S. Lewis,true
-30,Perelandra,C.S. Lewis,true
-31,That Hideous Strength,C.S. Lewis,false
-32,Paradise Lost,John Milton,false
-33,Book of Enoch,Ancient,false
-34,Gospel of Thomas,Ancient,false
-35,The Stranger,Albert Camus,true
-36,The Myth of Sisyphus,Albert Camus,false
-37,The Fall,Albert Camus,false
-38,The Trial,Franz Kafka,false
-39,American Gods,Neil Gaiman,true
-40,Frankenstein,Mary Shelley,false
-41,American Psycho,Bret Easton Ellis,false
-42,Gravity's Rainbow,Thomas Pynchon,false
-43,My Heart,Christof Koch,false
-44,Justice,Michael Sandel,false
-45,Build a Large Language Model from Scratch,Sebastian Raschka,false
-46,Patterns of Enterprise Application Architecture,Martin Fowler,false
-47,Nicomachean Ethics,Aristotle,false
-48,The Unexpected Truth About Animals,Lucy Cooke,false
-49,Hagakure,Yamamoto Tsunetomo,false
-50,Surely You're Joking Mr. Feynman!,Richard P. Feynman,false
-51,How to Build a Car,Adrian Newey,false
-52,The Power of Mindful Learning,Ellen J. Langer,false
-53,Mindfulness,Ellen J. Langer,false
-54,The 48 Laws of Power,Robert Greene,false
-55,War Is a Racket,Smedley Butler,false
-56,Flow,Mihaly Csikszentmihalyi,false
-57,At Last a Life,Paul David,false
-58,I Am a Strange Loop,Douglas Hofstadter,false
-59,Surfaces and Essences,Douglas Hofstadter,false
-60,My Big TOE,Thomas Campbell,false
-61,The Most Good You Can Do,Peter Singer,false
-62,Hegel,Peter Singer,false
-63,The Creature from Jekyll Island,G. Edward Griffin,false
-64,Thinkertoys,Michael Michalko,false
-65,Why? The Purpose of the Universe,Philip Goff,false
-66,Zero,Charles Seife,false
-67,Tripping on Utopia,Benjamin Breen,false
-68,The Road to Serfdom,Friedrich Hayek,false
-69,The Beginning of Infinity,David Deutsch,false
-70,The Bitcoin Standard,Saifedean Ammous,false
-71,The Fiat Standard,Saifedean Ammous,false
-72,The Sovereign Individual,James Dale Davidson,false
-73,The Untethered Soul,Michael A. Singer,false
-74,How Not to Be Wrong,Jordan Ellenberg,false
-75,Shape,Jordan Ellenberg,false
-76,Data and Reality,William Kent,false
-77,Discipline and Punish,Michel Foucault,false
-78,The Billionaire and the Mechanic,Julian Guthrie,false
-79,The Plague,Albert Camus,false
-80,Life 3.0,Max Tegmark,false
-81,The Worldly Philosophers,Robert L. Heilbroner,false
-82,Sprint,Jake Knapp,false
-83,Clean Code,Robert C. Martin,false
-84,Inspired,Marty Cagan,false
-85,The Second Machine Age,Erik Brynjolfsson,false
-86,Make Time,Jake Knapp,false
-87,How to Win Friends and Influence People,Dale Carnegie,false
-88,Sapiens,Yuval Noah Harari,true,true
-89,A Programmer's Introduction to Mathematics,Jeremy Kun,false
-90,A New Kind of Science,Stephen Wolfram,false
-91,The Art of Doing Science and Engineering,Richard Hamming,false
-92,Calculus,Michael Spivak,false
-93,Autobiography of a Yogi,Paramahansa Yogananda,false
-94,Why Machines Learn,Anil Ananthaswamy,false
-95,Blown Away,Herb Payson,false
-96,Rarotonga,Christian Williams,false
-97,The Incredible Voyage,Tristan Jones,false
-98,Zero to One,Peter Thiel,false
-99,The Creative Act: A Way of Being,Rick Rubin,false
-100,The Holographic Universe,Michael Talbot,false
-101,The Power of Control,Tom Pane,false
-102,The Psychology of Invention in the Mathematical Field,Jacques Hadamard,false
-103,The Art of Computer Programming,Donald Knuth,false
-104,The Pocket,Thich Nhat Hanh,false
-105,Tao Te Ching,Lao Tzu,false
-106,Good Energy,Casey Means,false
-107,Mycelium Running,Paul Stamets,false
-108,Fewer Better Things,Glenn Adamson,false
-109,Softwar,Jason Paul Lowery,false
-110,The Mathematical Theory of Communication,Claude Shannon,false
-111,Transformer,Nick Lane,false
-112,Log of the Mahina,John Neal,false
-113,Emblems of Mind,Edward Rothstein,false
-114,The Code Book,Simon Singh,false
-115,Concrete Mathematics,Ronald Graham,false
-116,The Asset Economy,Lisa Adkins,false
-117,Gravitation,Charles W. Misner,false
-118,Spacetime and Geometry,Sean M. Carroll,false
-119,The Road to Reality,Roger Penrose,false
-120,The Beginner's Guide to Mathematical Logic,Raymond Smullyan,false
-121,To Mock a Mockingbird,Raymond Smullyan,false
-122,Combinators,Stephen Wolfram,false
-123,Man's Search for Meaning,Viktor Frankl,false
-124,Endurance,Alfred Lansing,false
-125,The Courage to Be Happy,Ichiro Kishimi,false
-126,Why Greatness Cannot Be Planned,Kenneth O. Stanley,false
-127,1 2 3 Infinity,George Gamow,false
-128,Simulacra and Simulation,Jean Baudrillard,false
-129,Something Deeply Hidden,Sean Carroll,false
-130,Dhammapada,Ancient,false
-131,The Quran,Anonymous,false
-132,The Bible,Anonymous,false
-133,Plato's Republic,Plato,false
-134,Atomic Habits,James Clear,true,true
-135,Principles,Ray Dalio,true
-136,Foundation,Isaac Asimov,true
-137,Barbarian Days,William Finnegan,true
-138,Search Inside Yourself,Chade-Meng Tan,true
-139,Fifth Business,Robertson Davies,true
-140,The Manticore,Robertson Davies,true
-141,World of Wonders,Robertson Davies,true
+ID,title,author,read,listened
+1,Ready Player One,Ernest Cline,false,false
+2,The Golden Compass,Philip Pullman,false,false
+3,Slaughterhouse-Five,Kurt Vonnegut,false,false
+4,Diaspora,Greg Egan,false,false
+5,Stranger in a Strange Land,Robert A. Heinlein,false,false
+6,Dune,Frank Herbert,false,false
+7,Anna Karenina,Leo Tolstoy,false,false
+8,Père Goriot,Honoré de Balzac,false,false
+9,Atlas Shrugged,Ayn Rand,false,false
+10,Collected Fictions,Jorge Luis Borges,false,false
+11,Consider Phlebas,Iain M. Banks,true,false
+12,Surface Detail,Iain M. Banks,false,false
+13,The Player of Games,Iain M. Banks,false,false
+14,Project Hail Mary,Andy Weir,false,false
+15,The Three-Body Problem,Liu Cixin,false,false
+16,Siddhartha,Hermann Hesse,false,false
+17,The Metamorphosis,Franz Kafka,true,false
+18,Snow Crash,Neal Stephenson,false,false
+19,Infinite Jest,David Foster Wallace,false,false
+20,Bhagavad Gita,Ancient,false,false
+21,The Old Man and the Sea,Ernest Hemingway,false,true
+22,Notes from Underground,Fyodor Dostoevsky,false,false
+23,The Idiot,Fyodor Dostoevsky,true,false
+24,The Metamorphosis of Prime Intellect,Roger Williams,false,false
+25,Ubik,Philip K. Dick,false,false
+26,The Light Pirate,Lily Brooks-Dalton,false,false
+27,The Brothers Karamazov,Fyodor Dostoevsky,false,false
+28,Catch-22,Joseph Heller,false,false
+29,Out of the Silent Planet,C.S. Lewis,true,false
+30,Perelandra,C.S. Lewis,true,false
+31,That Hideous Strength,C.S. Lewis,false,false
+32,Paradise Lost,John Milton,false,false
+33,Book of Enoch,Ancient,false,false
+34,Gospel of Thomas,Ancient,false,false
+35,The Stranger,Albert Camus,true,false
+36,The Myth of Sisyphus,Albert Camus,false,false
+37,The Fall,Albert Camus,false,false
+38,The Trial,Franz Kafka,false,false
+39,American Gods,Neil Gaiman,true,false
+40,Frankenstein,Mary Shelley,false,false
+41,American Psycho,Bret Easton Ellis,false,false
+42,Gravity's Rainbow,Thomas Pynchon,false,false
+43,My Heart,Christof Koch,false,false
+44,Justice,Michael Sandel,false,false
+45,Build a Large Language Model from Scratch,Sebastian Raschka,false,false
+46,Patterns of Enterprise Application Architecture,Martin Fowler,false,false
+47,Nicomachean Ethics,Aristotle,false,false
+48,The Unexpected Truth About Animals,Lucy Cooke,false,false
+49,Hagakure,Yamamoto Tsunetomo,false,false
+50,Surely You're Joking Mr. Feynman!,Richard P. Feynman,false,false
+51,How to Build a Car,Adrian Newey,false,false
+52,The Power of Mindful Learning,Ellen J. Langer,false,false
+53,Mindfulness,Ellen J. Langer,false,false
+54,The 48 Laws of Power,Robert Greene,false,false
+55,War Is a Racket,Smedley Butler,false,false
+56,Flow,Mihaly Csikszentmihalyi,false,false
+57,At Last a Life,Paul David,false,false
+58,I Am a Strange Loop,Douglas Hofstadter,false,false
+59,Surfaces and Essences,Douglas Hofstadter,false,false
+60,My Big TOE,Thomas Campbell,false,false
+61,The Most Good You Can Do,Peter Singer,false,false
+62,Hegel,Peter Singer,false,false
+63,The Creature from Jekyll Island,G. Edward Griffin,false,false
+64,Thinkertoys,Michael Michalko,false,false
+65,Why? The Purpose of the Universe,Philip Goff,false,false
+66,Zero,Charles Seife,false,false
+67,Tripping on Utopia,Benjamin Breen,false,false
+68,The Road to Serfdom,Friedrich Hayek,false,false
+69,The Beginning of Infinity,David Deutsch,false,false
+70,The Bitcoin Standard,Saifedean Ammous,false,false
+71,The Fiat Standard,Saifedean Ammous,false,false
+72,The Sovereign Individual,James Dale Davidson,false,false
+73,The Untethered Soul,Michael A. Singer,false,false
+74,How Not to Be Wrong,Jordan Ellenberg,false,false
+75,Shape,Jordan Ellenberg,false,false
+76,Data and Reality,William Kent,false,false
+77,Discipline and Punish,Michel Foucault,false,false
+78,The Billionaire and the Mechanic,Julian Guthrie,false,false
+79,The Plague,Albert Camus,false,false
+80,Life 3.0,Max Tegmark,false,false
+81,The Worldly Philosophers,Robert L. Heilbroner,false,false
+82,Sprint,Jake Knapp,false,false
+83,Clean Code,Robert C. Martin,false,false
+84,Inspired,Marty Cagan,false,false
+85,The Second Machine Age,Erik Brynjolfsson,false,false
+86,Make Time,Jake Knapp,false,false
+87,How to Win Friends and Influence People,Dale Carnegie,false,false
+88,Sapiens,Yuval Noah Harari,false,true
+89,A Programmer's Introduction to Mathematics,Jeremy Kun,false,false
+90,A New Kind of Science,Stephen Wolfram,false,false
+91,The Art of Doing Science and Engineering,Richard Hamming,false,false
+92,Calculus,Michael Spivak,false,false
+93,Autobiography of a Yogi,Paramahansa Yogananda,false,false
+94,Why Machines Learn,Anil Ananthaswamy,false,false
+95,Blown Away,Herb Payson,false,false
+96,Rarotonga,Christian Williams,false,false
+97,The Incredible Voyage,Tristan Jones,false,false
+98,Zero to One,Peter Thiel,false,false
+99,The Creative Act: A Way of Being,Rick Rubin,false,false
+100,The Holographic Universe,Michael Talbot,false,false
+101,The Power of Control,Tom Pane,false,false
+102,The Psychology of Invention in the Mathematical Field,Jacques Hadamard,false,false
+103,The Art of Computer Programming,Donald Knuth,false,false
+104,The Pocket,Thich Nhat Hanh,false,false
+105,Tao Te Ching,Lao Tzu,false,false
+106,Good Energy,Casey Means,false,false
+107,Mycelium Running,Paul Stamets,false,false
+108,Fewer Better Things,Glenn Adamson,false,false
+109,Softwar,Jason Paul Lowery,false,false
+110,The Mathematical Theory of Communication,Claude Shannon,false,false
+111,Transformer,Nick Lane,false,false
+112,Log of the Mahina,John Neal,false,false
+113,Emblems of Mind,Edward Rothstein,false,false
+114,The Code Book,Simon Singh,false,false
+115,Concrete Mathematics,Ronald Graham,false,false
+116,The Asset Economy,Lisa Adkins,false,false
+117,Gravitation,Charles W. Misner,false,false
+118,Spacetime and Geometry,Sean M. Carroll,false,false
+119,The Road to Reality,Roger Penrose,false,false
+120,The Beginner's Guide to Mathematical Logic,Raymond Smullyan,false,false
+121,To Mock a Mockingbird,Raymond Smullyan,false,false
+122,Combinators,Stephen Wolfram,false,false
+123,Man's Search for Meaning,Viktor Frankl,false,false
+124,Endurance,Alfred Lansing,false,false
+125,The Courage to Be Happy,Ichiro Kishimi,false,false
+126,Why Greatness Cannot Be Planned,Kenneth O. Stanley,false,false
+127,1 2 3 Infinity,George Gamow,false,false
+128,Simulacra and Simulation,Jean Baudrillard,false,false
+129,Something Deeply Hidden,Sean Carroll,false,false
+130,Dhammapada,Ancient,false,false
+131,The Quran,Anonymous,false,false
+132,The Bible,Anonymous,false,false
+133,Plato's Republic,Plato,false,false
+134,Atomic Habits,James Clear,false,true
+135,Principles,Ray Dalio,true,false
+136,Foundation,Isaac Asimov,true,false
+137,Barbarian Days,William Finnegan,true,false
+138,Search Inside Yourself,Chade-Meng Tan,true,false
+139,Fifth Business,Robertson Davies,true,false
+140,The Manticore,Robertson Davies,true,false
+141,World of Wonders,Robertson Davies,true,false

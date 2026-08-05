@@ -5,23 +5,23 @@ annotate service.Books with @(
         Data : [
             {
                 $Type : 'UI.DataField',
-                Label : 'ID',
-                Value : ID,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'title',
+                Label : 'Title',
                 Value : title,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'author',
+                Label : 'Author',
                 Value : author,
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'finished',
-                Value : finished,
+                Label : 'Read',
+                Value : read,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'Listened',
+                Value : listened,
             },
         ],
     },
@@ -36,23 +36,23 @@ annotate service.Books with @(
     UI.LineItem : [
         {
             $Type : 'UI.DataField',
-            Label : 'ID',
-            Value : ID,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'title',
+            Label : 'Title',
             Value : title,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'author',
+            Label : 'Author',
             Value : author,
         },
         {
             $Type : 'UI.DataField',
-            Label : 'finished',
-            Value : finished,
+            Label : 'Read',
+            Value : read,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : 'Listened',
+            Value : listened,
         },
     ],
 );
