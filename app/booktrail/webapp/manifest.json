@@ -102,13 +102,33 @@
           "options": {
             "settings": {
               "contextPath": "/Books",
-              "variantManagement": "Page",
+              "variantManagement": "None",
+              "initialLoad": "Enabled",
               "navigation": {
                 "Books": {
                   "detail": {
                     "route": "BooksObjectPage"
                   }
                 }
+              },
+              "views": {
+                "paths": [
+                  {
+                    "key": "all",
+                    "label": "All",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#All"
+                  },
+                  {
+                    "key": "finished",
+                    "label": "Finished",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Finished"
+                  },
+                  {
+                    "key": "unfinished",
+                    "label": "Unfinished",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Unfinished"
+                  }
+                ]
               },
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {

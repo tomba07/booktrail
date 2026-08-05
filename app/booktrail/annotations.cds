@@ -1,5 +1,39 @@
 using CatalogService as service from '../../srv/catalog-service';
 annotate service.Books with @(
+    UI.SelectionVariant #All : {
+        Text : 'All',
+        SelectOptions : [],
+    },
+    UI.SelectionVariant #Finished : {
+        Text : 'Finished',
+        SelectOptions : [
+            {
+                PropertyName : read,
+                Ranges : [
+                    {
+                        Sign : #I,
+                        Option : #EQ,
+                        Low : 'true',
+                    }
+                ],
+            }
+        ],
+    },
+    UI.SelectionVariant #Unfinished : {
+        Text : 'Unfinished',
+        SelectOptions : [
+            {
+                PropertyName : read,
+                Ranges : [
+                    {
+                        Sign : #I,
+                        Option : #EQ,
+                        Low : 'false',
+                    }
+                ],
+            }
+        ],
+    },
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',
         Data : [
