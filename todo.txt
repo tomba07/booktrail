@@ -1,0 +1,18 @@
+Labels
+
+Detail Page
+
+Categories
+
+Extend seed data
+ - Walter Moers
+ - Eragon
+ - LOTR, Hobbit
+
+Persistence?
+
+Book Creation
+
+AI Book Creation
+
+OVP
