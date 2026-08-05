@@ -1,4 +1,4 @@
-ID,title,author,read,listened
+ID,title,author,read,listened,rating
 1,Ready Player One,Ernest Cline,false,false
 2,The Golden Compass,Philip Pullman,false,false
 3,Slaughterhouse-Five,Kurt Vonnegut,false,false
@@ -140,3 +140,12 @@ ID,title,author,read,listened
 139,Fifth Business,Robertson Davies,true,false
 140,The Manticore,Robertson Davies,true,false
 141,World of Wonders,Robertson Davies,true,false
+142,The Hunger Games,Suzanne Collins,true,false,
+143,Die 13½ Leben des Käpt'n Blaubär,Walter Moers,true,false,
+144,Rumo & Die Wunder im Dunkeln,Walter Moers,true,false,
+145,Die Stadt der Träumenden Bücher,Walter Moers,true,false,
+146,Ensel und Krete,Walter Moers,true,false,
+147,Eragon,Christopher Paolini,false,true,
+148,Die Physiker,Friedrich Dürrenmatt,true,false,
+149,Expedition ins Ungewisse,Marleen Nelen,true,false,
+150,Der Schatten des Windes,Carlos Ruiz Zafón,true,false,

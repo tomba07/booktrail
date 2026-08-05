@@ -23,6 +23,11 @@ annotate service.Books with @(
                 Label : 'Listened',
                 Value : listened,
             },
+            {
+                $Type : 'UI.DataField',
+                Label : 'Rating',
+                Value : rating,
+            },
         ],
     },
     UI.Facets : [
@@ -53,6 +58,11 @@ annotate service.Books with @(
             $Type : 'UI.DataField',
             Label : 'Listened',
             Value : listened,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : 'Rating',
+            Value : rating,
         },
     ],
 );

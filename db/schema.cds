@@ -6,4 +6,5 @@ entity Books {
         author   : String(100);
         read      : Boolean default false;
         listened  : Boolean default false;
+        rating    : Integer;
 }
