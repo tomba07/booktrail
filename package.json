@@ -15,21 +15,21 @@
     "cds-plugin-ui5": "^0.13.0"
   },
   "cds": {
-    "profiles": {
-      "production": {
-        "requires": {
-          "db": {
-            "kind": "sqlite",
-            "credentials": {
-              "url": "/data/booktrail.sqlite"
-            }
+    "requires": {
+      "auth": "dummy",
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "/data/booktrail.sqlite",
+          "[development]": {
+            "url": ":memory:"
           }
         }
       }
     }
   },
   "scripts": {
-    "start": "cds-serve",
+    "start": "node server.js",
     "watch-booktrail": "cds watch --open com.mteschke.booktrail.booktrail/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "workspaces": [

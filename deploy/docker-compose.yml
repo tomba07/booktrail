@@ -3,6 +3,7 @@ services:
     build:
       context: ..
       dockerfile: Dockerfile
+    container_name: booktrail-app
     restart: unless-stopped
     environment:
       - NODE_ENV=production
@@ -11,21 +12,13 @@ services:
       - booktrail_data:/data
     expose:
       - "4004"
-
-  caddy:
-    image: caddy:2-alpine
-    restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
-    depends_on:
-      - app
+    networks:
+      - web
 
 volumes:
   booktrail_data:
-  caddy_data:
-  caddy_config:
+
+networks:
+  web:
+    name: web
+    external: true
