@@ -34,19 +34,33 @@ annotate service.Books with @(
             }
         ],
     },
-    UI.FieldGroup #GeneratedGroup : {
+    UI.DataPoint #Rating : {
+        Value : rating,
+        Title : 'Rating',
+        Visualization : #Rating,
+        MaxRating : 5,
+    },
+    UI.HeaderInfo : {
+        TypeName : 'Book',
+        TypeNamePlural : 'Books',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : title,
+        },
+        Description : {
+            $Type : 'UI.DataField',
+            Value : author,
+        },
+    },
+    UI.HeaderFacets : [
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.DataPoint#Rating',
+        },
+    ],
+    UI.FieldGroup #Status : {
         $Type : 'UI.FieldGroupType',
         Data : [
-            {
-                $Type : 'UI.DataField',
-                Label : 'Title',
-                Value : title,
-            },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Author',
-                Value : author,
-            },
             {
                 $Type : 'UI.DataField',
                 Label : 'Read',
@@ -57,19 +71,14 @@ annotate service.Books with @(
                 Label : 'Listened',
                 Value : listened,
             },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Rating',
-                Value : rating,
-            },
         ],
     },
     UI.Facets : [
         {
             $Type : 'UI.ReferenceFacet',
-            ID : 'GeneratedFacet1',
-            Label : 'General Information',
-            Target : '@UI.FieldGroup#GeneratedGroup',
+            ID : 'StatusFacet',
+            Label : 'Status',
+            Target : '@UI.FieldGroup#Status',
         },
     ],
     UI.LineItem : [
@@ -94,10 +103,14 @@ annotate service.Books with @(
             Value : listened,
         },
         {
-            $Type : 'UI.DataField',
+            $Type : 'UI.DataFieldForAnnotation',
             Label : 'Rating',
-            Value : rating,
+            Target : '@UI.DataPoint#Rating',
         },
     ],
 );
+
+annotate service.Books with {
+    rating @UI.Hidden : { $edmJson : { $Not : { $Path : 'read' } } };
+};
 

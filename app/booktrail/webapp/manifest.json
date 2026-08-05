@@ -134,6 +134,11 @@
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
                     "type": "ResponsiveTable"
+                  },
+                  "columns": {
+                    "DataFieldForAnnotation::DataPoint::Rating": {
+                      "width": "10rem"
+                    }
                   }
                 }
               }
