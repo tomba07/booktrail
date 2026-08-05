@@ -1,5 +1,10 @@
 using CatalogService as service from '../../srv/catalog-service';
 annotate service.Books with @(
+    UI.SelectionFields : [
+        read,
+        priority,
+        author,
+    ],
     UI.SelectionVariant #All : {
         Text : 'All',
         SelectOptions : [],
@@ -130,6 +135,23 @@ annotate service.Books with @(
 );
 
 annotate service.Books with {
-    rating @UI.Hidden : { $edmJson : { $Not : { $Path : 'read' } } };
+    title     @Common.Label : 'Title';
+    author    @Common.Label : 'Author';
+    read      @Common.Label : 'Read';
+    listened  @Common.Label : 'Listened';
+    rating    @(Common.Label : 'Rating', UI.Hidden : { $edmJson : { $Not : { $Path : 'read' } } });
+    priority  @(
+        Common.Label : 'Priority',
+        Common.ValueListWithFixedValues : true,
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Priorities',
+            Parameters : [{
+                $Type : 'Common.ValueListParameterOut',
+                LocalDataProperty : priority,
+                ValueListProperty : 'name',
+            }],
+        }
+    );
 };
 

@@ -1,10 +1,14 @@
 namespace booktrail;
 
-type Priority : String(10) enum {
+type Priority : String(10) @assert.range enum {
     High   = 'High';
     Medium = 'Medium';
     Low    = 'Low';
 };
+
+entity Priorities {
+    key name : Priority;
+}
 
 entity Books {
     key ID       : Integer;

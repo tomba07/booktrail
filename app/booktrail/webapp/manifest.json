@@ -158,7 +158,8 @@
                   "fields": {
                     "CustomRating": {
                       "template": "com.mteschke.booktrail.booktrail.ext.RatingField",
-                      "label": "Rating"
+                      "label": "Rating",
+                      "visible": "{read}"
                     }
                   }
                 }
