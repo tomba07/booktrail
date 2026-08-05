@@ -19,7 +19,7 @@ ID,title,author,finished,audiobook
 18,Snow Crash,Neal Stephenson,false
 19,Infinite Jest,David Foster Wallace,false
 20,Bhagavad Gita,Ancient,false
-21,The Old Man and the Sea,Ernest Hemingway,false
+21,The Old Man and the Sea,Ernest Hemingway,true,true
 22,Notes from Underground,Fyodor Dostoevsky,false
 23,The Idiot,Fyodor Dostoevsky,true
 24,The Metamorphosis of Prime Intellect,Roger Williams,false
@@ -27,8 +27,8 @@ ID,title,author,finished,audiobook
 26,The Light Pirate,Lily Brooks-Dalton,false
 27,The Brothers Karamazov,Fyodor Dostoevsky,false
 28,Catch-22,Joseph Heller,false
-29,Out of the Silent Planet,C.S. Lewis,false
-30,Perelandra,C.S. Lewis,false
+29,Out of the Silent Planet,C.S. Lewis,true
+30,Perelandra,C.S. Lewis,true
 31,That Hideous Strength,C.S. Lewis,false
 32,Paradise Lost,John Milton,false
 33,Book of Enoch,Ancient,false
@@ -86,7 +86,7 @@ ID,title,author,finished,audiobook
 85,The Second Machine Age,Erik Brynjolfsson,false
 86,Make Time,Jake Knapp,false
 87,How to Win Friends and Influence People,Dale Carnegie,false
-88,Sapiens,Yuval Noah Harari,false
+88,Sapiens,Yuval Noah Harari,true,true
 89,A Programmer's Introduction to Mathematics,Jeremy Kun,false
 90,A New Kind of Science,Stephen Wolfram,false
 91,The Art of Doing Science and Engineering,Richard Hamming,false
@@ -132,9 +132,11 @@ ID,title,author,finished,audiobook
 131,The Quran,Anonymous,false
 132,The Bible,Anonymous,false
 133,Plato's Republic,Plato,false
-134,Atomic Habits,James Clear,true
+134,Atomic Habits,James Clear,true,true
 135,Principles,Ray Dalio,true
 136,Foundation,Isaac Asimov,true
 137,Barbarian Days,William Finnegan,true
 138,Search Inside Yourself,Chade-Meng Tan,true
 139,Fifth Business,Robertson Davies,true
+140,The Manticore,Robertson Davies,true
+141,World of Wonders,Robertson Davies,true
