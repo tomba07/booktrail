@@ -163,17 +163,17 @@
                   {
                     "key": "all",
                     "label": "All",
-                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#All"
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#All"
                   },
                   {
                     "key": "finished",
                     "label": "Finished",
-                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Finished"
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#Finished"
                   },
                   {
                     "key": "unfinished",
                     "label": "Unfinished",
-                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Unfinished"
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#Unfinished"
                   }
                 ]
               },
@@ -182,7 +182,29 @@
                   "tableSettings": {
                     "type": "ResponsiveTable"
                   },
+                  "actions": {
+                    "markAsRead": {
+                      "text": "Mark as Read",
+                      "press": "com.mteschke.booktrail.booktrail.ext.BookActions.onMarkAsRead",
+                      "requiresSelection": true
+                    },
+                    "setPriority": {
+                      "text": "Set Priority",
+                      "press": "com.mteschke.booktrail.booktrail.ext.BookActions.onSetPriority",
+                      "requiresSelection": true
+                    }
+                  },
                   "columns": {
+                    "PriorityColumn": {
+                      "header": "Priority",
+                      "width": "6em",
+                      "importance": "High",
+                      "position": {
+                        "placement": "Before",
+                        "anchor": "DataField::read"
+                      },
+                      "template": "com.mteschke.booktrail.booktrail.ext.PriorityColumn"
+                    },
                     "TagsColumn": {
                       "header": "Tags",
                       "width": "12em",
@@ -191,8 +213,7 @@
                         "placement": "After",
                         "anchor": "DataField::read"
                       },
-                      "template": "com.mteschke.booktrail.booktrail.ext.TagsColumn",
-                      "properties": ["tags/tag_ID", "tags/tag/name"]
+                      "template": "com.mteschke.booktrail.booktrail.ext.TagsColumn"
                     },
                     "DataFieldForAnnotation::DataPoint::Rating": {
                       "width": "10rem"
@@ -218,6 +239,10 @@
                       "template": "com.mteschke.booktrail.booktrail.ext.RatingField",
                       "label": "Rating",
                       "visible": "{read}"
+                    },
+                    "CustomPriority": {
+                      "template": "com.mteschke.booktrail.booktrail.ext.PriorityField",
+                      "label": "Priority"
                     }
                   }
                 },

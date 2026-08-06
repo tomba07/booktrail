@@ -2,9 +2,49 @@ using CatalogService as service from '../../srv/catalog-service';
 annotate service.Books with @(
     UI.SelectionFields : [
         read,
-        priority,
         author,
     ],
+    UI.PresentationVariant : {
+        SortOrder : [{
+            Property : priority,
+            Descending : true,
+        }],
+        Visualizations : ['@UI.LineItem'],
+    },
+    UI.SelectionPresentationVariant #All : {
+        Text : 'All',
+        SelectionVariant : { SelectOptions : [] },
+        PresentationVariant : {
+            SortOrder : [{ Property : priority, Descending : true }],
+            Visualizations : ['@UI.LineItem'],
+        },
+    },
+    UI.SelectionPresentationVariant #Finished : {
+        Text : 'Finished',
+        SelectionVariant : {
+            SelectOptions : [{
+                PropertyName : read,
+                Ranges : [{ Sign : #I, Option : #EQ, Low : 'true' }],
+            }],
+        },
+        PresentationVariant : {
+            SortOrder : [{ Property : priority, Descending : true }],
+            Visualizations : ['@UI.LineItem'],
+        },
+    },
+    UI.SelectionPresentationVariant #Unfinished : {
+        Text : 'Unfinished',
+        SelectionVariant : {
+            SelectOptions : [{
+                PropertyName : read,
+                Ranges : [{ Sign : #I, Option : #EQ, Low : 'false' }],
+            }],
+        },
+        PresentationVariant : {
+            SortOrder : [{ Property : priority, Descending : true }],
+            Visualizations : ['@UI.LineItem'],
+        },
+    },
     UI.SelectionVariant #All : {
         Text : 'All',
         SelectOptions : [],
@@ -79,12 +119,6 @@ annotate service.Books with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'Priority',
-                Value : priority,
-                ![@UI.Hidden] : { $edmJson : { $Path : 'read' } },
-            },
-            {
-                $Type : 'UI.DataField',
                 Label : 'Rating',
                 Value : rating,
                 ![@UI.Hidden] : true,
@@ -118,12 +152,6 @@ annotate service.Books with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : 'Priority',
-            Value : priority,
-            ![@UI.Hidden] : { $edmJson : { $Path : 'read' } },
-        },
-        {
-            $Type : 'UI.DataField',
             Label : 'Read',
             Value : read,
         },
@@ -148,16 +176,7 @@ annotate service.Books with {
     rating    @(Common.Label : 'Rating', UI.Hidden : { $edmJson : { $Not : { $Path : 'read' } } });
     priority  @(
         Common.Label : 'Priority',
-        Common.ValueListWithFixedValues : true,
-        Common.ValueList : {
-            $Type : 'Common.ValueListType',
-            CollectionPath : 'Priorities',
-            Parameters : [{
-                $Type : 'Common.ValueListParameterOut',
-                LocalDataProperty : priority,
-                ValueListProperty : 'name',
-            }],
-        }
+        UI.Hidden : false
     );
 };
 
