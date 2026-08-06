@@ -1,0 +1,93 @@
+- generic [ref=f41e1]:
+  - generic:
+    - status [ref=f41e206]: Table "Tags" has been updated. Items are available.
+    - status
+  - generic [ref=f41e46]:
+    - text: "   :  :  :  :                                         : : : :     "
+    - article [ref=f41e225]:
+      - banner "Book Trail" [ref=f41e226]:
+        - generic [ref=f41e227]:
+          - button "Book Trail" [expanded] [active]
+          - generic [ref=f41e229]:
+            - heading "Book Trail" [level=2] [ref=f41e232]
+            - button "Share (Ctrl+Shift+S)" [ref=f41e237] [cursor=pointer]:
+              - generic [ref=f41e238]:
+                - generic [ref=f41e239]: 
+                - text: 
+      - generic [ref=f41e240]:
+        - region "Expanded header" [ref=f41e242]:
+          - generic [ref=f41e248]:
+            - generic [ref=f41e255]:
+              - searchbox [ref=f41e256]
+              - generic [ref=f41e257] [cursor=pointer]: 
+            - generic [ref=f41e258]:
+              - generic [ref=f41e260]:
+                - generic [ref=f41e261]: Tag
+                - generic [ref=f41e262]: ":"
+              - generic [ref=f41e265]:
+                - textbox "Tag" [ref=f41e266]
+                - button "Show Value Help" [ref=f41e268] [cursor=pointer]: 
+            - generic [ref=f41e269]:
+              - button "Go" [ref=f41e270] [cursor=pointer]
+              - button "Adapt Filters" [ref=f41e273] [cursor=pointer]
+          - button "Collapse Header" [ref=f41e276] [cursor=pointer]:
+            - generic [ref=f41e277]: 
+          - button "Pin Header" [ref=f41e279] [cursor=pointer]:
+            - generic [ref=f41e280]: 
+        - generic [ref=f41e285]:
+          - toolbar "Tags (8)" [ref=f41e286]:
+            - generic [ref=f41e287]:
+              - heading "Tags" [level=3] [ref=f41e288]
+              - generic [ref=f41e289]: (8)
+            - button "Delete" [disabled] [ref=f41e291]
+            - separator [ref=f41e294]
+            - button "Copy to Clipboard" [disabled] [ref=f41e295]:
+              - generic [ref=f41e296]: 
+            - button "Settings" [ref=f41e298] [cursor=pointer]:
+              - generic [ref=f41e299]: 
+            - group "Export Table Split Button Press Enter to trigger action and ALT + arrow keys to open menu" [ref=f41e302]:
+              - generic [ref=f41e303]:
+                - button "excel-attachment" [ref=f41e304] [cursor=pointer]:
+                  - generic [ref=f41e305]: 
+                - button "Open Menu" [ref=f41e307] [cursor=pointer]:
+                  - generic [ref=f41e308]: 
+          - grid "Tags (8)" [ref=f41e310]:
+            - rowgroup [ref=f41e311]:
+              - row [ref=f41e312]:
+                - columnheader "Selection" [ref=f41e313]:
+                  - checkbox "Select All" [ref=f41e314]
+                - columnheader "Name" [ref=f41e316]:
+                  - generic "Name" [ref=f41e320]
+            - rowgroup [ref=f41e323]:
+              - row [ref=f41e324] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e325]:
+                  - checkbox "Item Selection" [ref=f41e326]
+                - gridcell "Sci-Fi" [ref=f41e328]
+              - row [ref=f41e330] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e331]:
+                  - checkbox "Item Selection" [ref=f41e332]
+                - gridcell "Classic" [ref=f41e334]
+              - row [ref=f41e336] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e337]:
+                  - checkbox "Item Selection" [ref=f41e338]
+                - gridcell "Fantasy" [ref=f41e340]
+              - row [ref=f41e342] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e343]:
+                  - checkbox "Item Selection" [ref=f41e344]
+                - gridcell "Philosophy" [ref=f41e346]
+              - row [ref=f41e348] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e349]:
+                  - checkbox "Item Selection" [ref=f41e350]
+                - gridcell "Mystery" [ref=f41e352]
+              - row [ref=f41e354] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e355]:
+                  - checkbox "Item Selection" [ref=f41e356]
+                - gridcell "History" [ref=f41e358]
+              - row [ref=f41e360] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e361]:
+                  - checkbox "Item Selection" [ref=f41e362]
+                - gridcell "Biography" [ref=f41e364]
+              - row [ref=f41e366] [cursor=pointer]:
+                - gridcell "Item Selection" [ref=f41e367]:
+                  - checkbox "Item Selection" [ref=f41e368]
+                - gridcell "Non-Fiction" [ref=f41e370]

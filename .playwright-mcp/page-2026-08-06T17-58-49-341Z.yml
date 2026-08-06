@@ -1,0 +1,92 @@
+- generic [active] [ref=f33e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f33e19]:
+    - main "New Object" [ref=f33e208]:
+      - banner "New Object" [ref=f33e209]:
+        - generic [ref=f33e34]:
+          - button "New Object" [expanded]
+          - generic [ref=f33e36]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - generic [ref=f33e38]:
+            - heading "New Object" [level=2] [ref=f33e210]
+            - toolbar "Header actions" [ref=f33e211]:
+              - button "Edit" [ref=f33e212] [cursor=pointer]
+              - button "Delete" [ref=f33e156] [cursor=pointer]
+              - button "Share (Ctrl+Shift+S)" [ref=f33e159] [cursor=pointer]:
+                - generic [ref=f33e62]:
+                  - generic [ref=f33e63]: 
+                  - text: 
+      - generic [ref=f33e65]:
+        - region "Expanded header" [ref=f33e160]:
+          - button "Collapse Header" [ref=f33e161] [cursor=pointer]:
+            - generic [ref=f33e69]: 
+          - button "Pin Header" [ref=f33e162] [cursor=pointer]:
+            - generic [ref=f33e72]: 
+        - navigation "Sections navigation bar" [ref=f33e163]:
+          - tablist [ref=f33e76]:
+            - tab "Status" [selected] [ref=f33e215] [cursor=pointer]
+            - tab "Tags" [ref=f33e220] [cursor=pointer]
+        - generic [ref=f33e87]:
+          - region [ref=f33e174]:
+            - generic [ref=f33e92]:
+              - heading "Status" [level=2] [ref=f33e175]
+              - region [ref=f33e101]:
+                - generic [ref=f33e176]:
+                  - generic [ref=f33e177]:
+                    - term [ref=f33e178]:
+                      - generic [ref=f33e180]:
+                        - generic [ref=f33e181]: Read
+                        - generic [ref=f33e182]: ":"
+                    - definition [ref=f33e183]:
+                      - generic [ref=f33e225]:
+                        - text: –
+                        - generic: Empty Value
+                  - generic [ref=f33e186]:
+                    - term [ref=f33e187]:
+                      - generic [ref=f33e189]:
+                        - generic [ref=f33e190]: Listened
+                        - generic [ref=f33e191]: ":"
+                    - definition [ref=f33e192]:
+                      - generic [ref=f33e226]:
+                        - text: –
+                        - generic: Empty Value
+                  - generic [ref=f33e195]:
+                    - term [ref=f33e196]:
+                      - generic [ref=f33e198]:
+                        - generic [ref=f33e199]: Priority
+                        - generic [ref=f33e200]: ":"
+                    - definition [ref=f33e201]:
+                      - generic [ref=f33e204]:
+                        - text: –
+                        - generic: Empty Value
+                  - generic [ref=f33e227]:
+                    - term [ref=f33e228]:
+                      - generic [ref=f33e230]:
+                        - generic [ref=f33e231]: Rating
+                        - generic [ref=f33e232]: ":"
+                    - definition [ref=f33e233]:
+                      - slider "Rating" [ref=f33e234] [cursor=pointer]:
+                        - generic:
+                          - generic [ref=f33e235]: 
+                          - generic [ref=f33e236]: 
+                          - generic [ref=f33e237]: 
+                          - generic [ref=f33e238]: 
+                          - generic [ref=f33e239]: 
+                        - generic [ref=f33e241]:
+                          - generic [ref=f33e242]: 
+                          - generic [ref=f33e243]: 
+                          - generic [ref=f33e244]: 
+                          - generic [ref=f33e245]: 
+                          - generic [ref=f33e246]: 
+          - region [ref=f33e205]:
+            - heading "Tags" [level=2] [ref=f33e206]
+            - textbox "Add tags..." [disabled] [ref=f33e207]
+    - figure [ref=f33e248]:
+      - generic [ref=f33e249]:
+        - img "PageNotFound" [ref=f33e250]
+        - generic [ref=f33e252]:
+          - heading "Sorry, we can't find this page" [level=2] [ref=f33e253]
+          - generic [ref=f33e254]: HTTP request was not processed because $batch failed

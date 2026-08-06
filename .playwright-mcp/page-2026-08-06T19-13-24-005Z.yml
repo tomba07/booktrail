@@ -1,0 +1,168 @@
+- generic [ref=f38e1]:
+  - generic:
+    - status
+    - status
+    - dialog [ref=f38e320]:
+      - generic [ref=f38e321]: 
+      - img "Drag and Resize Dialog"
+      - region "Header":
+        - 'heading "Select: Tag" [level=1] [ref=f38e326]'
+      - region "Content" [ref=f38e327]:
+        - generic [ref=f38e333]:
+          - toolbar [ref=f38e339]:
+            - generic [ref=f38e342]:
+              - searchbox "Search for Tag" [active] [ref=f38e343]
+              - generic [ref=f38e344] [cursor=pointer]: 
+            - button "Go" [ref=f38e346] [cursor=pointer]
+            - button "Show Filters" [ref=f38e349] [cursor=pointer]
+          - generic [ref=f38e357]:
+            - generic:
+              - generic [ref=f38e360]:
+                - heading "Items" [level=2] [ref=f38e362]
+                - button "Copy to Clipboard" [disabled] [ref=f38e364]:
+                  - generic [ref=f38e365]: 
+              - grid "Items" [ref=f38e368]:
+                - row [ref=f38e372]:
+                  - columnheader "ID" [ref=f38e373] [cursor=pointer]
+                  - columnheader "name" [ref=f38e381] [cursor=pointer]
+                - generic [ref=f38e389]:
+                  - table [ref=f38e392]:
+                    - rowgroup [ref=f38e393]:
+                      - row [ref=f38e394]:
+                        - gridcell [ref=f38e395]
+                        - gridcell [ref=f38e396]
+                      - row [ref=f38e397]:
+                        - gridcell [ref=f38e398]
+                        - gridcell [ref=f38e399]
+                      - row [ref=f38e400]:
+                        - gridcell [ref=f38e401]
+                        - gridcell [ref=f38e402]
+                      - row [ref=f38e403]:
+                        - gridcell [ref=f38e404]
+                        - gridcell [ref=f38e405]
+                      - row [ref=f38e406]:
+                        - gridcell [ref=f38e407]
+                        - gridcell [ref=f38e408]
+                      - row [ref=f38e409]:
+                        - gridcell [ref=f38e410]
+                        - gridcell [ref=f38e411]
+                      - row [ref=f38e412]:
+                        - gridcell [ref=f38e413]
+                        - gridcell [ref=f38e414]
+                      - row [ref=f38e415]:
+                        - gridcell [ref=f38e416]
+                        - gridcell [ref=f38e417]
+                      - row [ref=f38e418]:
+                        - gridcell [ref=f38e419]
+                        - gridcell [ref=f38e420]
+                      - row [ref=f38e421]:
+                        - gridcell [ref=f38e422]
+                        - gridcell [ref=f38e423]
+                      - row [ref=f38e424]:
+                        - gridcell [ref=f38e425]
+                        - gridcell [ref=f38e426]
+                      - row [ref=f38e427]:
+                        - gridcell [ref=f38e428]
+                        - gridcell [ref=f38e429]
+                  - gridcell "There are no entries yet. When there are, you’ll see them here." [ref=f38e430]
+      - region "Footer" [ref=f38e432]:
+        - button "Cancel" [ref=f38e435] [cursor=pointer]
+  - generic [ref=f38e46]:
+    - text: "   :  :  :  :                                     "
+    - main "Ready Player One" [ref=f38e50]:
+      - banner "Ready Player One" [ref=f38e51]:
+        - generic [ref=f38e52]:
+          - button "Ready Player One Ernest Cline" [expanded]
+          - generic [ref=f38e54]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - generic [ref=f38e56]:
+            - generic [ref=f38e211]:
+              - heading "Ready Player One" [level=2] [ref=f38e212]
+              - generic [ref=f38e213]: Ernest Cline
+            - generic [ref=f38e216]:
+              - button "Draft" [ref=f38e217] [cursor=pointer]:
+                - generic [ref=f38e218]:
+                  - generic [ref=f38e219]: Draft
+                  - generic [ref=f38e220]: 
+              - button "Share (Ctrl+Shift+S)" [ref=f38e81] [cursor=pointer]:
+                - generic [ref=f38e82]:
+                  - generic [ref=f38e83]: 
+                  - text: 
+      - generic [ref=f38e101]:
+        - region "Expanded header" [ref=f38e221]:
+          - button "Collapse Header" [ref=f38e222] [cursor=pointer]:
+            - generic [ref=f38e223]: 
+          - button "Pin Header" [ref=f38e225] [cursor=pointer]:
+            - generic [ref=f38e226]: 
+        - navigation "Sections navigation bar" [ref=f38e229]:
+          - tablist [ref=f38e230]:
+            - tab "Status" [selected] [ref=f38e231] [cursor=pointer]
+            - tab "Tags" [ref=f38e236] [cursor=pointer]
+        - generic [ref=f38e103]:
+          - region [ref=f38e104]:
+            - generic [ref=f38e108]:
+              - heading "Status" [level=2] [ref=f38e111]
+              - form [ref=f38e241]:
+                - generic [ref=f38e242]:
+                  - generic [ref=f38e243]:
+                    - generic [ref=f38e246]:
+                      - generic [ref=f38e247]: Read
+                      - generic [ref=f38e248]: ":"
+                    - checkbox "Read" [ref=f38e251]
+                  - generic [ref=f38e253]:
+                    - generic [ref=f38e256]:
+                      - generic [ref=f38e257]: Listened
+                      - generic [ref=f38e258]: ":"
+                    - checkbox "Listened" [ref=f38e261]
+                  - generic [ref=f38e263]:
+                    - generic [ref=f38e266]:
+                      - generic [ref=f38e267]: Priority
+                      - generic [ref=f38e268]: ":"
+                    - generic [ref=f38e273]:
+                      - combobox "Priority" [ref=f38e274]
+                      - button "Show Value Help" [ref=f38e276] [cursor=pointer]: 
+          - region "Tags" [ref=f38e149]:
+            - generic [ref=f38e159]:
+              - toolbar "Tags (1)" [ref=f38e302]:
+                - generic [ref=f38e161]:
+                  - heading "Tags" [level=2] [ref=f38e162]
+                  - generic [ref=f38e303]: (1)
+                - generic [ref=f38e166]:
+                  - searchbox "Search" [ref=f38e167]
+                  - generic [ref=f38e168] [cursor=pointer]: 
+                - button "Create" [ref=f38e277] [cursor=pointer]
+                - button "Delete" [disabled] [ref=f38e280]
+                - separator [ref=f38e169]
+                - button "Copy to Clipboard" [disabled] [ref=f38e170]:
+                  - generic [ref=f38e171]: 
+                - button "Paste" [ref=f38e283] [cursor=pointer]:
+                  - generic [ref=f38e284]: 
+                - button "Settings" [ref=f38e173] [cursor=pointer]:
+                  - generic [ref=f38e174]: 
+                - group "Export Table Split Button Press Enter to trigger action and ALT + arrow keys to open menu" [ref=f38e177]:
+                  - generic [ref=f38e178]:
+                    - button "excel-attachment" [ref=f38e179] [cursor=pointer]:
+                      - generic [ref=f38e180]: 
+                    - button "Open Menu" [ref=f38e182] [cursor=pointer]:
+                      - generic [ref=f38e183]: 
+              - grid "Tags (1)" [ref=f38e304]:
+                - rowgroup [ref=f38e186]:
+                  - row [ref=f38e286]:
+                    - columnheader "Selection" [ref=f38e287]:
+                      - checkbox "Select All" [ref=f38e288]
+                    - columnheader "Tag" [ref=f38e188]:
+                      - generic "Tag" [ref=f38e192]
+                - rowgroup [ref=f38e195]:
+                  - row [ref=f38e305] [cursor=pointer]:
+                    - gridcell "Item Selection" [ref=f38e307]:
+                      - checkbox "Item Selection" [ref=f38e308]
+                    - gridcell [ref=f38e310]:
+                      - generic [ref=f38e314]:
+                        - textbox "Tag" [ref=f38e315]
+                        - button "Show Value Help" [ref=f38e317]: 
+      - region "Object Footer Area" [ref=f38e291]:
+        - toolbar [ref=f38e292]:
+          - generic [ref=f38e294]: Draft updated
+          - button "Save" [ref=f38e296] [cursor=pointer]
+          - button "Discard Draft" [ref=f38e299] [cursor=pointer]

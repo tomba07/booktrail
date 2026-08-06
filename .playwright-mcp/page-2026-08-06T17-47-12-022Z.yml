@@ -1,0 +1,68 @@
+- generic [ref=f29e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f29e24]:
+    - text: "   :  :  :  :                                     "
+    - main "Ready Player One" [ref=f29e28]:
+      - banner "Ready Player One" [ref=f29e29]:
+        - generic [ref=f29e30] [cursor=pointer]:
+          - button "Ready Player One Ernest Cline" [expanded]
+          - generic [ref=f29e32]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - generic [ref=f29e34]:
+            - generic [ref=f29e41]:
+              - heading "Ready Player One" [level=2] [ref=f29e42]
+              - generic [ref=f29e43]: Ernest Cline
+            - generic [ref=f29e144]:
+              - button "Draft" [ref=f29e145]:
+                - generic [ref=f29e146]:
+                  - generic [ref=f29e147]: Draft
+                  - generic [ref=f29e148]: 
+              - button "Share (Ctrl+Shift+S)" [ref=f29e57]:
+                - generic [ref=f29e58]:
+                  - generic [ref=f29e59]: 
+                  - text: 
+      - generic [ref=f29e61]:
+        - region "Expanded header" [ref=f29e63]:
+          - button "Collapse Header" [ref=f29e64] [cursor=pointer]:
+            - generic [ref=f29e65]: 
+          - button "Pin Header" [ref=f29e67] [cursor=pointer]:
+            - generic [ref=f29e68]: 
+        - navigation "Sections navigation bar" [ref=f29e71]:
+          - tablist [ref=f29e72]:
+            - tab "Status" [selected] [ref=f29e149] [cursor=pointer]
+            - tab "Tags" [ref=f29e154] [cursor=pointer]
+        - generic [ref=f29e83]:
+          - region [ref=f29e84]:
+            - generic [ref=f29e88]:
+              - heading "Status" [level=2] [ref=f29e91]
+              - form [ref=f29e159]:
+                - generic [ref=f29e160]:
+                  - generic [ref=f29e161]:
+                    - generic [ref=f29e164]:
+                      - generic [ref=f29e165]: Read
+                      - generic [ref=f29e166]: ":"
+                    - checkbox "Read" [active] [ref=f29e169]
+                  - generic [ref=f29e171]:
+                    - generic [ref=f29e174]:
+                      - generic [ref=f29e175]: Listened
+                      - generic [ref=f29e176]: ":"
+                    - checkbox "Listened" [ref=f29e179]
+                  - generic [ref=f29e181]:
+                    - generic [ref=f29e184]:
+                      - generic [ref=f29e185]: Priority
+                      - generic [ref=f29e186]: ":"
+                    - generic [ref=f29e191]:
+                      - combobox "Priority" [ref=f29e192]
+                      - button "Show Value Help" [ref=f29e194] [cursor=pointer]: 
+          - region [ref=f29e129]:
+            - heading "Tags" [level=2] [ref=f29e131]
+            - generic [ref=f29e141]:
+              - textbox "Add tags..." [ref=f29e142]
+              - button "Show Value Help" [ref=f29e196] [cursor=pointer]: 
+      - region "Object Footer Area" [ref=f29e197]:
+        - toolbar [ref=f29e198]:
+          - button "Save" [ref=f29e202] [cursor=pointer]
+          - button "Discard Draft" [ref=f29e205] [cursor=pointer]

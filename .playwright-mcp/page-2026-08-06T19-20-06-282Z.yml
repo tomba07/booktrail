@@ -1,0 +1,99 @@
+- generic [ref=f39e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f39e212]:
+    - text: "   :  :  :  :                                     "
+    - main "Ready Player One" [ref=f39e216]:
+      - banner "Ready Player One" [ref=f39e217]:
+        - generic [ref=f39e218]:
+          - button "Ready Player One Ernest Cline"
+          - generic [ref=f39e220]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - generic [ref=f39e222]:
+            - generic [ref=f39e229]:
+              - heading "Ready Player One" [level=2] [ref=f39e231]
+              - generic [ref=f39e232]: Ernest Cline
+            - generic [ref=f39e237]:
+              - button "Draft" [ref=f39e238] [cursor=pointer]:
+                - generic [ref=f39e239]:
+                  - generic [ref=f39e240]: Draft
+                  - generic [ref=f39e241]: 
+              - button "Share (Ctrl+Shift+S)" [ref=f39e245] [cursor=pointer]:
+                - generic [ref=f39e246]:
+                  - generic [ref=f39e247]: 
+                  - text: 
+          - button "Expand Header" [ref=f39e248] [cursor=pointer]:
+            - generic [ref=f39e249]: 
+        - navigation "Sections navigation bar" [ref=f39e252]:
+          - tablist [ref=f39e253]:
+            - tab "Status" [ref=f39e254] [cursor=pointer]
+            - tab "Tags" [selected] [ref=f39e259] [cursor=pointer]
+      - generic [ref=f39e267]:
+        - region [ref=f39e268]:
+          - generic [ref=f39e272]:
+            - heading "Status" [level=2] [ref=f39e275]
+            - form [ref=f39e281]:
+              - generic [ref=f39e284]:
+                - generic [ref=f39e285]:
+                  - generic [ref=f39e288]:
+                    - generic [ref=f39e289]: Read
+                    - generic [ref=f39e290]: ":"
+                  - checkbox "Read" [ref=f39e293]
+                - generic [ref=f39e295]:
+                  - generic [ref=f39e298]:
+                    - generic [ref=f39e299]: Listened
+                    - generic [ref=f39e300]: ":"
+                  - checkbox "Listened" [ref=f39e303]
+                - generic [ref=f39e305]:
+                  - generic [ref=f39e308]:
+                    - generic [ref=f39e309]: Priority
+                    - generic [ref=f39e310]: ":"
+                  - generic [ref=f39e315]:
+                    - combobox "Priority" [ref=f39e316]
+                    - button "Show Value Help" [ref=f39e318] [cursor=pointer]: 
+        - region "Tags" [ref=f39e319]:
+          - generic [ref=f39e329]:
+            - toolbar "Tags (1)" [ref=f39e330]:
+              - generic [ref=f39e331]:
+                - heading "Tags" [level=2] [ref=f39e332]
+                - generic [ref=f39e333]: (1)
+              - generic [ref=f39e337]:
+                - searchbox "Search" [ref=f39e338]
+                - generic [ref=f39e339] [cursor=pointer]: 
+              - button "Create" [ref=f39e340] [cursor=pointer]
+              - button "Delete" [disabled] [ref=f39e343]
+              - separator [ref=f39e346]
+              - button "Copy to Clipboard" [disabled] [ref=f39e347]:
+                - generic [ref=f39e348]: 
+              - button "Paste" [ref=f39e350] [cursor=pointer]:
+                - generic [ref=f39e351]: 
+              - button "Settings" [ref=f39e353] [cursor=pointer]:
+                - generic [ref=f39e354]: 
+              - group "Export Table Split Button Press Enter to trigger action and ALT + arrow keys to open menu" [ref=f39e357]:
+                - generic [ref=f39e358]:
+                  - button "excel-attachment" [ref=f39e359] [cursor=pointer]:
+                    - generic [ref=f39e360]: 
+                  - button "Open Menu" [ref=f39e362] [cursor=pointer]:
+                    - generic [ref=f39e363]: 
+            - grid "Tags (1)" [ref=f39e365]:
+              - rowgroup [ref=f39e366]:
+                - row [ref=f39e367]:
+                  - columnheader "Selection" [ref=f39e368]:
+                    - checkbox "Select All" [ref=f39e369]
+                  - columnheader "Tag" [ref=f39e371]:
+                    - generic "Tag" [ref=f39e375]
+              - rowgroup [ref=f39e378]:
+                - row [ref=f39e379] [cursor=pointer]:
+                  - gridcell "Item Selection" [ref=f39e381]:
+                    - checkbox "Item Selection" [ref=f39e382]
+                  - gridcell [ref=f39e384]:
+                    - generic [ref=f39e388]:
+                      - textbox "Tag" [active] [ref=f39e389]: Sci-Fi
+                      - button "Show Value Help" [ref=f39e391]: 
+      - region "Object Footer Area" [ref=f39e394]:
+        - toolbar [ref=f39e395]:
+          - generic [ref=f39e397]: Draft updated
+          - button "Save" [ref=f39e401] [cursor=pointer]
+          - button "Discard Draft" [ref=f39e404] [cursor=pointer]

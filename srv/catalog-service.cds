@@ -6,4 +6,9 @@ service CatalogService {
 
     @readonly
     entity Priorities as projection on booktrail.Priorities;
+
+    @odata.draft.enabled
+    entity Tags as projection on booktrail.Tags;
+
+    entity Books_Tags as projection on booktrail.Books_Tags;
 }

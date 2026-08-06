@@ -1,0 +1,73 @@
+- generic [ref=f28e1]:
+  - generic:
+    - status
+    - status
+    - dialog [ref=f28e145]:
+      - list [ref=f28e150]:
+        - listitem "List Item . Is Active . Draft" [active] [ref=f28e151] [cursor=pointer]:
+          - generic [ref=f28e152]: Draft
+        - listitem [ref=f28e155] [cursor=pointer]:
+          - generic [ref=f28e156]: Saved Version
+  - main "Ready Player One" [ref=f28e10]:
+    - banner "Ready Player One" [ref=f28e11]:
+      - generic [ref=f28e12] [cursor=pointer]:
+        - button "Ready Player One Ernest Cline" [expanded]
+        - generic [ref=f28e14]:
+          - navigation "Breadcrumb Trail":
+            - list
+        - generic [ref=f28e16]:
+          - generic [ref=f28e23]:
+            - heading "Ready Player One" [level=2] [ref=f28e24]
+            - generic [ref=f28e25]: Ernest Cline
+          - generic [ref=f28e29]:
+            - button "Saved Version" [ref=f28e30]:
+              - generic [ref=f28e31]:
+                - generic [ref=f28e32]: Saved Version
+                - generic [ref=f28e33]: 
+            - button "Delete" [disabled] [ref=f28e36]
+            - button "Share (Ctrl+Shift+S)" [ref=f28e40]:
+              - generic [ref=f28e41]:
+                - generic [ref=f28e42]: 
+                - text: 
+    - generic [ref=f28e44]:
+      - region "Expanded header" [ref=f28e46]:
+        - button "Collapse Header" [ref=f28e47] [cursor=pointer]:
+          - generic [ref=f28e48]: 
+        - button "Pin Header" [ref=f28e50] [cursor=pointer]:
+          - generic [ref=f28e51]: 
+      - navigation "Sections navigation bar" [ref=f28e54]:
+        - tablist [ref=f28e55]:
+          - tab "Status" [selected] [ref=f28e56] [cursor=pointer]
+          - tab "Tags" [ref=f28e61] [cursor=pointer]
+      - generic [ref=f28e66]:
+        - region [ref=f28e67]:
+          - generic [ref=f28e71]:
+            - heading "Status" [level=2] [ref=f28e74]
+            - region [ref=f28e80]:
+              - generic [ref=f28e83]:
+                - generic [ref=f28e84]:
+                  - term [ref=f28e85]:
+                    - generic [ref=f28e87]:
+                      - generic [ref=f28e88]: Read
+                      - generic [ref=f28e89]: ":"
+                  - definition [ref=f28e90]:
+                    - generic [ref=f28e91]: "No"
+                - generic [ref=f28e93]:
+                  - term [ref=f28e94]:
+                    - generic [ref=f28e96]:
+                      - generic [ref=f28e97]: Listened
+                      - generic [ref=f28e98]: ":"
+                  - definition [ref=f28e99]:
+                    - generic [ref=f28e100]: "No"
+                - generic [ref=f28e102]:
+                  - term [ref=f28e103]:
+                    - generic [ref=f28e105]:
+                      - generic [ref=f28e106]: Priority
+                      - generic [ref=f28e107]: ":"
+                  - definition [ref=f28e108]:
+                    - generic [ref=f28e111]:
+                      - text: –
+                      - generic: Empty Value
+        - region [ref=f28e112]:
+          - heading "Tags" [level=2] [ref=f28e114]
+          - textbox "Add tags..." [disabled] [ref=f28e125]

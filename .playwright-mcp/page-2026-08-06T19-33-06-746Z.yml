@@ -1,0 +1,26 @@
+- generic [ref=f42e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f42e24]:
+    - text: "   :  :                "
+    - main "New Object" [ref=f42e226]:
+      - banner "New Object" [ref=f42e227]:
+        - generic [ref=f42e228]:
+          - generic [ref=f42e230]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - heading "New Object" [level=2] [ref=f42e239]
+      - region [ref=f42e247]:
+        - generic [ref=f42e251]:
+          - heading "Tag" [level=2] [ref=f42e254]
+          - form [ref=f42e260]:
+            - generic [ref=f42e264]:
+              - generic [ref=f42e267]:
+                - generic [ref=f42e268]: Name
+                - generic [ref=f42e269]: ":"
+              - textbox "Name" [active] [ref=f42e274]
+      - region "Object Footer Area" [ref=f42e276]:
+        - toolbar [ref=f42e277]:
+          - button "Create" [ref=f42e281] [cursor=pointer]
+          - button "Discard Draft" [ref=f42e284] [cursor=pointer]

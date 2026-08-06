@@ -89,12 +89,59 @@
           "target": "BooksList"
         },
         {
+          "pattern": "Tags:?query:",
+          "name": "TagsList",
+          "target": "TagsList"
+        },
+        {
+          "pattern": "Tags({key}):?query:",
+          "name": "TagsObjectPage",
+          "target": "TagsObjectPage"
+        },
+        {
           "pattern": "Books({key}):?query:",
           "name": "BooksObjectPage",
           "target": "BooksObjectPage"
         }
       ],
       "targets": {
+        "TagsList": {
+          "type": "Component",
+          "id": "TagsList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/Tags",
+              "variantManagement": "None",
+              "initialLoad": "Enabled",
+              "navigation": {
+                "Tags": {
+                  "detail": {
+                    "route": "TagsObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "TagsObjectPage": {
+          "type": "Component",
+          "id": "TagsObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "contextPath": "/Tags",
+              "editableHeaderContent": false
+            }
+          }
+        },
         "BooksList": {
           "type": "Component",
           "id": "BooksList",
@@ -160,6 +207,14 @@
                       "template": "com.mteschke.booktrail.booktrail.ext.RatingField",
                       "label": "Rating",
                       "visible": "{read}"
+                    }
+                  }
+                },
+                "tags/@com.sap.vocabularies.UI.v1.LineItem#Tags": {
+                  "actions": {
+                    "manageTagsAction": {
+                      "text": "Manage Tags",
+                      "press": "com.mteschke.booktrail.booktrail.ext.TagsActions.onManageTags"
                     }
                   }
                 }

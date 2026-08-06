@@ -4,6 +4,10 @@
       "type": "stdio",
       "command": "/Users/D056968/.nvm/versions/node/v20.13.1/bin/node",
       "args": ["/Users/D056968/.nvm/versions/node/v20.13.1/lib/node_modules/@sap-ux/fiori-mcp-server/dist/index.js"]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "/Users/D056968/.nvm/versions/node/v20.13.1/bin/playwright-mcp"
     }
   }
 }

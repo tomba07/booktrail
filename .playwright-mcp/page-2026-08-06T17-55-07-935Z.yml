@@ -1,0 +1,69 @@
+- generic [active] [ref=f33e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f33e19]:
+    - main [ref=f33e32]:
+      - banner [ref=f33e33]:
+        - generic [ref=f33e38]:
+          - generic [ref=f33e45]:
+            - heading [level=2] [ref=f33e46]: The Golden Compass
+            - generic [ref=f33e47]: Philip Pullman
+          - toolbar [ref=f33e51]:
+            - button [ref=f33e54] [cursor=pointer]:
+              - generic [ref=f33e55]: Edit
+            - button [ref=f33e57] [cursor=pointer]:
+              - generic [ref=f33e58]: Delete
+            - button [ref=f33e61] [cursor=pointer]:
+              - generic [ref=f33e62]:
+                - generic [ref=f33e63]: 
+                - text: 
+      - generic [ref=f33e65]:
+        - region [ref=f33e67]:
+          - button [ref=f33e68] [cursor=pointer]:
+            - generic [ref=f33e69]: 
+          - button [ref=f33e71] [cursor=pointer]:
+            - generic [ref=f33e72]: 
+        - navigation [ref=f33e75]:
+          - tablist [ref=f33e76]:
+            - tab [selected] [ref=f33e77] [cursor=pointer]:
+              - generic [ref=f33e78]: Status
+            - tab [ref=f33e82] [cursor=pointer]:
+              - generic [ref=f33e83]: Tags
+        - generic [ref=f33e87]:
+          - region [ref=f33e88]:
+            - generic [ref=f33e92]:
+              - heading [level=2] [ref=f33e95]: Status
+              - region [ref=f33e101]:
+                - generic [ref=f33e104]:
+                  - generic [ref=f33e105]:
+                    - term [ref=f33e106]:
+                      - generic [ref=f33e108]:
+                        - generic [ref=f33e109]: Read
+                        - generic [ref=f33e110]: ":"
+                    - definition [ref=f33e111]:
+                      - generic [ref=f33e112]: "No"
+                  - generic [ref=f33e114]:
+                    - term [ref=f33e115]:
+                      - generic [ref=f33e117]:
+                        - generic [ref=f33e118]: Listened
+                        - generic [ref=f33e119]: ":"
+                    - definition [ref=f33e120]:
+                      - generic [ref=f33e121]: "No"
+                  - generic [ref=f33e123]:
+                    - term [ref=f33e124]:
+                      - generic [ref=f33e126]:
+                        - generic [ref=f33e127]: Priority
+                        - generic [ref=f33e128]: ":"
+                    - definition [ref=f33e129]:
+                      - generic [ref=f33e130]: –
+          - region [ref=f33e133]:
+            - heading [level=2] [ref=f33e135]: Tags
+            - textbox [disabled] [ref=f33e146]:
+              - /placeholder: Add tags...
+    - figure [ref=f33e22]:
+      - generic [ref=f33e23]:
+        - img "PageNotFound" [ref=f33e24]
+        - generic [ref=f33e26]:
+          - heading "Sorry, we can't find this page" [level=2] [ref=f33e27]
+          - generic [ref=f33e28]: Not Found

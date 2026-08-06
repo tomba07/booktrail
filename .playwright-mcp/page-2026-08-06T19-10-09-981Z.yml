@@ -1,0 +1,154 @@
+- generic [ref=f37e1]:
+  - generic:
+    - status
+    - status
+    - dialog [ref=f37e171]:
+      - generic [ref=f37e172]: 
+      - img "Drag and Resize Dialog"
+      - region "Header":
+        - 'heading "Select: Tags" [level=1] [ref=f37e177]'
+      - region "Content" [ref=f37e178]:
+        - generic [ref=f37e181]:
+          - generic [ref=f37e184]:
+            - toolbar [ref=f37e190]:
+              - generic [ref=f37e193]:
+                - searchbox "Search for Tags" [ref=f37e194]
+                - generic [ref=f37e195] [cursor=pointer]: 
+              - button "Go" [ref=f37e197] [cursor=pointer]
+              - button "Show Filters" [ref=f37e200] [cursor=pointer]
+            - generic [ref=f37e208]:
+              - generic:
+                - generic [ref=f37e211]:
+                  - generic [ref=f37e212]:
+                    - heading "Items" [level=2] [ref=f37e213]
+                    - generic [ref=f37e319]: (6)
+                  - button "Copy to Clipboard" [disabled] [ref=f37e215]:
+                    - generic [ref=f37e216]: 
+                - grid "Items" [ref=f37e219]:
+                  - generic [ref=f37e221]:
+                    - button [ref=f37e222] [cursor=pointer]:
+                      - generic [ref=f37e320]: 
+                    - row [ref=f37e224]:
+                      - columnheader "ID" [ref=f37e225] [cursor=pointer]
+                      - columnheader "name" [ref=f37e233] [cursor=pointer]
+                  - generic [ref=f37e241]:
+                    - generic [ref=f37e243]:
+                      - row [ref=f37e321]:
+                        - gridcell "6ab5b489-c167-4031-9c17-355572c006e1" [ref=f37e322]
+                        - gridcell "Mystery" [ref=f37e326]
+                        - gridcell [ref=f37e249] [cursor=pointer]
+                      - row [ref=f37e330]:
+                        - gridcell "763f0b46-f7a0-4cfb-ac71-77bb9d881787" [ref=f37e331]
+                        - gridcell "Classic" [ref=f37e335]
+                        - gridcell [ref=f37e253] [cursor=pointer]
+                      - row [ref=f37e339]:
+                        - gridcell "8989c077-f697-439c-a38f-d2427ad9983a" [ref=f37e340]
+                        - gridcell "History" [ref=f37e344]
+                        - gridcell [ref=f37e257] [cursor=pointer]
+                      - row [ref=f37e348]:
+                        - gridcell "a68db8d2-8288-4619-9635-d0f425905d87" [ref=f37e349]
+                        - gridcell "Philosophy" [ref=f37e353]
+                        - gridcell [ref=f37e261] [cursor=pointer]
+                      - row "af2ea475-1c94-4176-bfff-7b1a70fca8ab Sci-Fi Sci-Fi" [ref=f37e375]:
+                        - gridcell "af2ea475-1c94-4176-bfff-7b1a70fca8ab" [ref=f37e358]
+                        - gridcell "Sci-Fi" [active] [ref=f37e362]
+                        - gridcell [ref=f37e265] [cursor=pointer]
+                      - row [ref=f37e366]:
+                        - gridcell "e80090c3-a483-422c-b711-f71c8d7ec69c" [ref=f37e367]
+                        - gridcell "Fantasy" [ref=f37e371]
+                        - gridcell [ref=f37e269] [cursor=pointer]
+                      - row [ref=f37e270]:
+                        - gridcell [ref=f37e271]
+                        - gridcell [ref=f37e272]
+                        - gridcell [ref=f37e273] [cursor=pointer]
+                      - row [ref=f37e274]:
+                        - gridcell [ref=f37e275]
+                        - gridcell [ref=f37e276]
+                        - gridcell [ref=f37e277] [cursor=pointer]
+                      - row [ref=f37e278]:
+                        - gridcell [ref=f37e279]
+                        - gridcell [ref=f37e280]
+                        - gridcell [ref=f37e281] [cursor=pointer]
+                    - row [ref=f37e283]
+                    - row [ref=f37e284]
+                    - row [ref=f37e285]
+                    - row [ref=f37e286]
+                    - row [ref=f37e287]
+                    - row [ref=f37e288]
+                    - row [ref=f37e289]
+                    - row [ref=f37e290]
+                    - row [ref=f37e291]
+          - form [ref=f37e295]:
+            - heading "No Items Selected" [level=2] [ref=f37e296]
+            - button "Remove All" [disabled] [ref=f37e303]:
+              - generic [ref=f37e304]: 
+      - region "Footer" [ref=f37e306]:
+        - toolbar "Footer actions" [ref=f37e307]:
+          - button "OK" [ref=f37e309] [cursor=pointer]
+          - button "Cancel" [ref=f37e312] [cursor=pointer]
+  - generic [ref=f37e22]:
+    - text: "   :  :  :  :                                     "
+    - main "Ready Player One" [ref=f37e26]:
+      - banner "Ready Player One" [ref=f37e27]:
+        - generic [ref=f37e28]:
+          - button "Ready Player One Ernest Cline"
+          - generic [ref=f37e30]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - generic [ref=f37e32]:
+            - generic [ref=f37e39]:
+              - heading "Ready Player One" [level=2] [ref=f37e41]
+              - generic [ref=f37e42]: Ernest Cline
+            - generic [ref=f37e47]:
+              - button "Draft" [ref=f37e48] [cursor=pointer]:
+                - generic [ref=f37e49]:
+                  - generic [ref=f37e50]: Draft
+                  - generic [ref=f37e51]: 
+              - button "Share (Ctrl+Shift+S)" [ref=f37e55] [cursor=pointer]:
+                - generic [ref=f37e56]:
+                  - generic [ref=f37e57]: 
+                  - text: 
+          - button "Expand Header" [ref=f37e58] [cursor=pointer]:
+            - generic [ref=f37e59]: 
+        - navigation "Sections navigation bar" [ref=f37e62]:
+          - tablist [ref=f37e63]:
+            - tab "Status" [ref=f37e64] [cursor=pointer]
+            - tab "Tags" [selected] [ref=f37e69] [cursor=pointer]
+      - generic [ref=f37e77]:
+        - region [ref=f37e78]:
+          - generic [ref=f37e82]:
+            - heading "Status" [level=2] [ref=f37e85]
+            - form [ref=f37e91]:
+              - generic [ref=f37e94]:
+                - generic [ref=f37e95]:
+                  - generic [ref=f37e98]:
+                    - generic [ref=f37e99]: Read
+                    - generic [ref=f37e100]: ":"
+                  - checkbox "Read" [ref=f37e103]
+                - generic [ref=f37e105]:
+                  - generic [ref=f37e108]:
+                    - generic [ref=f37e109]: Listened
+                    - generic [ref=f37e110]: ":"
+                  - checkbox "Listened" [ref=f37e113]
+                - generic [ref=f37e115]:
+                  - generic [ref=f37e118]:
+                    - generic [ref=f37e119]: Priority
+                    - generic [ref=f37e120]: ":"
+                  - generic [ref=f37e125]:
+                    - combobox "Priority" [ref=f37e126]
+                    - button "Show Value Help" [ref=f37e128] [cursor=pointer]: 
+        - region [ref=f37e129]:
+          - generic [ref=f37e133]:
+            - heading "Tags" [level=2] [ref=f37e136]
+            - form [ref=f37e142]:
+              - generic [ref=f37e146]:
+                - generic [ref=f37e149]:
+                  - generic [ref=f37e150]: Tags
+                  - generic [ref=f37e151]: ":"
+                - generic [ref=f37e155]:
+                  - textbox "Tags" [ref=f37e156]
+                  - button "Show Value Help" [ref=f37e158] [cursor=pointer]: 
+      - region "Object Footer Area" [ref=f37e160]:
+        - toolbar [ref=f37e161]:
+          - button "Save" [ref=f37e165] [cursor=pointer]
+          - button "Discard Draft" [ref=f37e168] [cursor=pointer]

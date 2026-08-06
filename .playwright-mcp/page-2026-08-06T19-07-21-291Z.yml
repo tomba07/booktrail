@@ -1,0 +1,62 @@
+- generic [ref=f35e1]:
+  - generic:
+    - status
+    - status
+  - generic [ref=f35e22]:
+    - text: "   :  :  :  :                                     "
+    - main "Slaughterhouse-Five" [ref=f35e26]:
+      - banner "Slaughterhouse-Five" [ref=f35e27]:
+        - generic [ref=f35e28]:
+          - button "Slaughterhouse-Five Kurt Vonnegut"
+          - generic [ref=f35e30]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - generic [ref=f35e32]:
+            - generic [ref=f35e146]:
+              - heading "Slaughterhouse-Five" [level=2] [ref=f35e148]
+              - generic [ref=f35e149]: Kurt Vonnegut
+            - toolbar "Header actions" [ref=f35e45]:
+              - button "Edit" [ref=f35e48] [cursor=pointer]
+              - button "Delete" [ref=f35e51] [cursor=pointer]
+              - button "Share (Ctrl+Shift+S)" [ref=f35e55] [cursor=pointer]:
+                - generic [ref=f35e56]:
+                  - generic [ref=f35e57]: 
+                  - text: 
+          - button "Expand Header" [ref=f35e153] [cursor=pointer]:
+            - generic [ref=f35e154]: 
+        - navigation "Sections navigation bar" [ref=f35e69]:
+          - tablist [ref=f35e70]:
+            - tab "Status" [ref=f35e71] [cursor=pointer]
+            - tab "Tags" [selected] [ref=f35e76] [cursor=pointer]
+      - generic [ref=f35e81]:
+        - region [ref=f35e82]:
+          - generic [ref=f35e86]:
+            - heading "Status" [level=2] [ref=f35e89]
+            - region [ref=f35e95]:
+              - generic [ref=f35e98]:
+                - generic [ref=f35e99]:
+                  - term [ref=f35e100]:
+                    - generic [ref=f35e102]:
+                      - generic [ref=f35e103]: Read
+                      - generic [ref=f35e104]: ":"
+                  - definition [ref=f35e105]:
+                    - generic [ref=f35e106]: "No"
+                - generic [ref=f35e108]:
+                  - term [ref=f35e109]:
+                    - generic [ref=f35e111]:
+                      - generic [ref=f35e112]: Listened
+                      - generic [ref=f35e113]: ":"
+                  - definition [ref=f35e114]:
+                    - generic [ref=f35e115]: "No"
+                - generic [ref=f35e117]:
+                  - term [ref=f35e118]:
+                    - generic [ref=f35e120]:
+                      - generic [ref=f35e121]: Priority
+                      - generic [ref=f35e122]: ":"
+                  - definition [ref=f35e123]:
+                    - generic [ref=f35e126]:
+                      - text: –
+                      - generic: Empty Value
+        - region [active] [ref=f35e127]:
+          - heading "Tags" [level=2] [ref=f35e129]
+          - textbox "Add tags..." [disabled] [ref=f35e140]

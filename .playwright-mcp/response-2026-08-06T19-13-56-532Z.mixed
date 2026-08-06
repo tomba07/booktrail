@@ -1,0 +1,11 @@
+--batch_id-1786043616040-429
+content-type: application/http
+content-transfer-encoding: binary
+
+HTTP/1.1 200 OK
+odata-version: 4.0
+content-type: application/json; charset=utf-8
+content-length: 63
+
+{"@odata.context":"$metadata#Tags","@odata.count":0,"value":[]}
+--batch_id-1786043616040-429--

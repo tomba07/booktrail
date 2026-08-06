@@ -98,6 +98,12 @@ annotate service.Books with @(
             Label : 'Status',
             Target : '@UI.FieldGroup#Status',
         },
+        {
+            $Type : 'UI.ReferenceFacet',
+            ID : 'TagsFacet',
+            Label : 'Tags',
+            Target : 'tags/@UI.LineItem#Tags',
+        },
     ],
     UI.LineItem : [
         {
@@ -149,6 +155,65 @@ annotate service.Books with {
             Parameters : [{
                 $Type : 'Common.ValueListParameterOut',
                 LocalDataProperty : priority,
+                ValueListProperty : 'name',
+            }],
+        }
+    );
+};
+
+annotate service.Tags with @(
+    UI.HeaderInfo : {
+        TypeName : 'Tag',
+        TypeNamePlural : 'Tags',
+        Title : { $Type : 'UI.DataField', Value : name },
+    },
+    UI.LineItem : [{
+        $Type : 'UI.DataField',
+        Value : name,
+        Label : 'Name',
+    }],
+    UI.SelectionFields : [ name ],
+    UI.FieldGroup #TagDetails : {
+        Data : [{
+            $Type : 'UI.DataField',
+            Value : name,
+            Label : 'Name',
+        }],
+    },
+    UI.Facets : [{
+        $Type : 'UI.ReferenceFacet',
+        ID : 'TagDetailsFacet',
+        Label : 'Tag',
+        Target : '@UI.FieldGroup#TagDetails',
+    }],
+);
+
+annotate service.Tags with {
+    name @Common.Label : 'Tag';
+};
+
+annotate service.Books_Tags with @(
+    UI.LineItem #Tags : [{
+        $Type : 'UI.DataField',
+        Value : tag_ID,
+        Label : 'Tag',
+    }],
+);
+
+annotate service.Books_Tags with {
+    tag @(
+        Common.Text : tag.name,
+        Common.TextArrangement : #TextOnly,
+        Common.Label : 'Tag',
+        Common.ValueList : {
+            $Type : 'Common.ValueListType',
+            CollectionPath : 'Tags',
+            Parameters : [{
+                $Type : 'Common.ValueListParameterOut',
+                LocalDataProperty : tag_ID,
+                ValueListProperty : 'ID',
+            },{
+                $Type : 'Common.ValueListParameterDisplayOnly',
                 ValueListProperty : 'name',
             }],
         }

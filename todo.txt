@@ -1,17 +1,13 @@
+Tidy up
+
 Properties:
-- Priority
-- Rating
+- new priority (1-10): view: progress bar, edit: slider
 - Category/Genre
 - Quotes/Notes?
 
-Detail Page
+Shell for back button etc.
 
-Extend seed data
- - Walter Moers
- - Eragon
- - LOTR, Hobbit
-
-Persistence?
+Improve Detail Page
 
 Book Creation
 

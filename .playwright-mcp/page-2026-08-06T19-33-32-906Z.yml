@@ -1,0 +1,56 @@
+- generic [ref=f42e1]:
+  - generic:
+    - status
+    - status
+    - alertdialog [ref=f42e287]:
+      - generic [ref=f42e288]: 
+      - img "Resize Dialog"
+      - region "Header":
+        - heading "Error" [level=2] [ref=f42e291]
+      - region "Content" [ref=f42e295]:
+        - region "Messages" [ref=f42e298]:
+          - list [ref=f42e303]:
+            - listitem "List Item . Has Details . Not Found . . Error" [active] [ref=f42e304] [cursor=pointer]:
+              - generic [ref=f42e305]:
+                - generic [ref=f42e306]: 
+                - generic [ref=f42e307]: Not Found
+              - button "Navigation" [ref=f42e309]:
+                - generic [ref=f42e310]: 
+            - listitem [ref=f42e312] [cursor=pointer]:
+              - generic [ref=f42e313]:
+                - generic [ref=f42e314]: 
+                - generic [ref=f42e315]: Not Found
+              - button "Navigation" [ref=f42e317]:
+                - generic [ref=f42e318]: 
+            - listitem [ref=f42e320] [cursor=pointer]:
+              - generic [ref=f42e321]:
+                - generic [ref=f42e322]: 
+                - generic [ref=f42e323]: Not Found
+              - button "Navigation" [ref=f42e325]:
+                - generic [ref=f42e326]: 
+      - region "Footer" [ref=f42e329]:
+        - button "Close" [ref=f42e332] [cursor=pointer]
+  - generic [ref=f42e24]:
+    - text: "   :  :                "
+    - main "Horror" [ref=f42e336]:
+      - banner "Horror" [ref=f42e337]:
+        - generic [ref=f42e228]:
+          - generic [ref=f42e230]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - heading "Horror" [level=2] [ref=f42e338]
+      - region [ref=f42e247]:
+        - generic [ref=f42e251]:
+          - heading "Tag" [level=2] [ref=f42e254]
+          - form [ref=f42e260]:
+            - generic [ref=f42e264]:
+              - generic [ref=f42e267]:
+                - generic [ref=f42e268]: Name
+                - generic [ref=f42e269]: ":"
+              - textbox "Name" [ref=f42e274]: Horror
+      - region "Object Footer Area" [ref=f42e276]:
+        - toolbar [ref=f42e277]:
+          - generic [ref=f42e279]: Updating draft...
+          - button "Create" [ref=f42e281] [cursor=pointer]
+          - button "Discard Draft" [ref=f42e284] [cursor=pointer]
+      - progressbar "Please wait" [ref=f42e341]

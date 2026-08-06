@@ -1,0 +1,89 @@
+- generic [ref=f39e1]:
+  - generic:
+    - status [ref=f39e407]: Object saved
+    - status
+    - generic [ref=f39e42]: Cmd+E
+    - alert [ref=f39e408]: Object saved
+  - generic [ref=f39e212]:
+    - text: "   :  :  :  :                                     "
+    - main "Ready Player One" [ref=f39e216]:
+      - banner "Ready Player One" [ref=f39e217]:
+        - generic [ref=f39e218]:
+          - button "Ready Player One Ernest Cline"
+          - generic [ref=f39e220]:
+            - navigation "Breadcrumb Trail":
+              - list
+          - generic [ref=f39e222]:
+            - generic [ref=f39e229]:
+              - heading "Ready Player One" [level=2] [ref=f39e231]
+              - generic [ref=f39e232]: Ernest Cline
+            - toolbar "Header actions" [ref=f39e409]:
+              - button "Edit" [active] [ref=f39e410] [cursor=pointer]
+              - button "Delete" [ref=f39e413] [cursor=pointer]
+              - button "Share (Ctrl+Shift+S)" [ref=f39e245] [cursor=pointer]:
+                - generic [ref=f39e246]:
+                  - generic [ref=f39e247]: 
+                  - text: 
+          - button "Expand Header" [ref=f39e248] [cursor=pointer]:
+            - generic [ref=f39e249]: 
+        - navigation "Sections navigation bar" [ref=f39e416]:
+          - tablist [ref=f39e417]:
+            - tab "Status" [ref=f39e418] [cursor=pointer]
+            - tab "Tags" [selected] [ref=f39e423] [cursor=pointer]
+      - generic [ref=f39e267]:
+        - region [ref=f39e268]:
+          - generic [ref=f39e272]:
+            - heading "Status" [level=2] [ref=f39e275]
+            - region [ref=f39e428]:
+              - generic [ref=f39e429]:
+                - generic [ref=f39e430]:
+                  - term [ref=f39e431]:
+                    - generic [ref=f39e433]:
+                      - generic [ref=f39e434]: Read
+                      - generic [ref=f39e435]: ":"
+                  - definition [ref=f39e436]:
+                    - generic [ref=f39e437]: "No"
+                - generic [ref=f39e439]:
+                  - term [ref=f39e440]:
+                    - generic [ref=f39e442]:
+                      - generic [ref=f39e443]: Listened
+                      - generic [ref=f39e444]: ":"
+                  - definition [ref=f39e445]:
+                    - generic [ref=f39e446]: "No"
+                - generic [ref=f39e448]:
+                  - term [ref=f39e449]:
+                    - generic [ref=f39e451]:
+                      - generic [ref=f39e452]: Priority
+                      - generic [ref=f39e453]: ":"
+                  - definition [ref=f39e454]:
+                    - generic [ref=f39e457]:
+                      - text: –
+                      - generic: Empty Value
+        - region "Tags" [ref=f39e319]:
+          - generic [ref=f39e329]:
+            - toolbar "Tags (1)" [ref=f39e330]:
+              - generic [ref=f39e331]:
+                - heading "Tags" [level=2] [ref=f39e332]
+                - generic [ref=f39e333]: (1)
+              - generic [ref=f39e337]:
+                - searchbox "Search" [ref=f39e338]
+                - generic [ref=f39e339] [cursor=pointer]: 
+              - separator [ref=f39e346]
+              - button "Copy to Clipboard" [disabled] [ref=f39e347]:
+                - generic [ref=f39e348]: 
+              - button "Settings" [ref=f39e353] [cursor=pointer]:
+                - generic [ref=f39e354]: 
+              - group "Export Table Split Button Press Enter to trigger action and ALT + arrow keys to open menu" [ref=f39e357]:
+                - generic [ref=f39e358]:
+                  - button "excel-attachment" [ref=f39e359] [cursor=pointer]:
+                    - generic [ref=f39e360]: 
+                  - button "Open Menu" [ref=f39e362] [cursor=pointer]:
+                    - generic [ref=f39e363]: 
+            - grid "Tags (1)" [ref=f39e365]:
+              - rowgroup [ref=f39e366]:
+                - row [ref=f39e458]:
+                  - columnheader "Tag" [ref=f39e371]:
+                    - generic "Tag" [ref=f39e375]
+              - rowgroup [ref=f39e378]:
+                - row [ref=f39e459] [cursor=pointer]:
+                  - gridcell "Sci-Fi" [ref=f39e460]
