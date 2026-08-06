@@ -6,4 +6,4 @@ cds.on('bootstrap', async (app) => {
   app.get('/', (req, res) => res.redirect('/booktrail/index.html'));
 });
 
-module.exports = cds.server;
+cds.server();

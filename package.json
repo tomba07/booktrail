@@ -8,12 +8,12 @@
   "dependencies": {
     "@cap-js/sqlite": "^3",
     "@sap/cds": "^10.0.5",
+    "@sap/cds-dk": "^10.0.6",
+    "cds-plugin-ui5": "^0.13.0",
     "express": "^4"
   },
   "devDependencies": {
-    "@cap-js/cds-types": "^0.10.0",
-    "@sap/cds-dk": "^10.0.6",
-    "cds-plugin-ui5": "^0.13.0"
+    "@cap-js/cds-types": "^0.10.0"
   },
   "cds": {
     "requires": {
