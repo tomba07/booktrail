@@ -183,6 +183,17 @@
                     "type": "ResponsiveTable"
                   },
                   "columns": {
+                    "TagsColumn": {
+                      "header": "Tags",
+                      "width": "12em",
+                      "importance": "High",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "DataField::read"
+                      },
+                      "template": "com.mteschke.booktrail.booktrail.ext.TagsColumn",
+                      "properties": ["tags/tag_ID", "tags/tag/name"]
+                    },
                     "DataFieldForAnnotation::DataPoint::Rating": {
                       "width": "10rem"
                     }

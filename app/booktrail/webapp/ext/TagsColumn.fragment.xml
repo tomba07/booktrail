@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <FlexBox wrap="Wrap" alignItems="Center"
+             items="{path: 'tags', parameters: {$expand: 'tag'}}">
+        <items>
+            <Token text="{tag/name}" editable="false" class="sapUiTinyMarginEnd sapUiTinyMarginBottom" />
+        </items>
+    </FlexBox>
+</core:FragmentDefinition>
