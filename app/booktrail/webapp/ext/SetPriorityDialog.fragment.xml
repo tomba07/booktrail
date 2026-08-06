@@ -1,0 +1,27 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout">
+    <Dialog id="priorityDialog" title="Set Priority" contentWidth="28rem" contentHeight="auto" draggable="true">
+        <content>
+            <List id="priorityList" items="{edit>/books}" class="sapUiSmallMarginTopBottom">
+                <CustomListItem>
+                    <HBox alignItems="Center" justifyContent="SpaceBetween" class="sapUiSmallMarginBeginEnd sapUiTinyMarginTopBottom">
+                        <Text text="{edit>title}" width="16rem" wrapping="false" />
+                        <StepInput
+                            value="{edit>priority}"
+                            min="0" max="10" step="1"
+                            width="8rem"
+                            description="/10" />
+                    </HBox>
+                </CustomListItem>
+            </List>
+        </content>
+        <beginButton>
+            <Button id="priorityApplyBtn" text="Apply" type="Emphasized" press=".onApplyPriority" />
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press=".onCancelPriority" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

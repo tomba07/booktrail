@@ -1,12 +1,8 @@
 sap.ui.define([
-    "sap/m/Dialog",
-    "sap/m/Button",
-    "sap/m/Slider",
-    "sap/m/Label",
-    "sap/m/VBox",
     "sap/m/MessageToast",
-    "sap/ui/model/json/JSONModel"
-], function (Dialog, Button, Slider, Label, VBox, MessageToast, JSONModel) {
+    "sap/ui/model/json/JSONModel",
+    "sap/ui/core/Fragment"
+], function (MessageToast, JSONModel, Fragment) {
     "use strict";
 
     function getSelectedContexts() {
@@ -20,53 +16,65 @@ sap.ui.define([
         return aCtxs;
     }
 
-    function openPriorityDialog(oModel, aCtxs, currentPriority) {
-        var oSliderModel = new JSONModel({ priority: currentPriority });
-        var oSlider = new Slider({
-            min: 0, max: 10, step: 1,
-            value: "{priority>/priority}",
-            width: "100%",
-            enableTickmarks: true,
-            inputsAsTooltips: true
+    var _oDialog = null;
+    var _oModel = null;
+
+    function openPriorityDialog(oModel, aCtxs) {
+        _oModel = oModel;
+        var aData = aCtxs.map(function (oCtx) {
+            return {
+                bookId: oCtx.getProperty("ID"),
+                title: oCtx.getProperty("title"),
+                priority: oCtx.getProperty("priority") || 0
+            };
         });
-        var oLabel = new Label({ text: "Priority: {priority>/priority}/10", labelFor: oSlider });
-        var oDialog = new Dialog({
-            title: "Set Priority",
-            content: new VBox({ items: [oLabel, oSlider], class: "sapUiSmallMargin" }),
-            beginButton: new Button({
-                text: "Apply",
-                type: "Emphasized",
-                press: function () {
-                    var priority = oSliderModel.getProperty("/priority");
-                    Promise.all(aCtxs.map(function (oCtx) {
-                        return oModel.bindContext("/setPriority(...)").invoke(undefined, {
-                            bookId: oCtx.getProperty("ID"),
-                            priority: priority
-                        });
-                    })).then(function () {
-                        MessageToast.show("Priority updated to " + priority + "/10");
-                        oModel.refresh();
-                        oDialog.close();
-                    }).catch(function (err) {
-                        MessageToast.show("Error: " + (err.message || err));
-                        oDialog.close();
-                    });
-                }
-            }),
-            endButton: new Button({ text: "Cancel", press: function () { oDialog.close(); } }),
-            afterClose: function () { oDialog.destroy(); }
-        });
-        oDialog.setModel(oSliderModel, "priority");
-        oDialog.open();
+
+        var oController = {
+            onApplyPriority: function () {
+                var aBooks = _oDialog.getModel("edit").getProperty("/books");
+                Promise.all(aBooks.map(function (b) {
+                    var oBinding = _oModel.bindContext("/setPriority(...)");
+                    oBinding.setParameter("bookId", b.bookId);
+                    oBinding.setParameter("priority", b.priority);
+                    return oBinding.invoke();
+                })).then(function () {
+                    MessageToast.show("Priorities updated");
+                    _oModel.refresh();
+                    _oDialog.close();
+                }).catch(function (err) {
+                    MessageToast.show("Error: " + (err.message || err));
+                    _oDialog.close();
+                });
+            },
+            onCancelPriority: function () {
+                _oDialog.close();
+            }
+        };
+
+        if (!_oDialog) {
+            Fragment.load({
+                name: "com.mteschke.booktrail.booktrail.ext.SetPriorityDialog",
+                controller: oController
+            }).then(function (oDialog) {
+                _oDialog = oDialog;
+                _oDialog.setModel(new JSONModel({ books: aData }), "edit");
+                _oDialog.open();
+            });
+        } else {
+            _oDialog.getModel("edit").setProperty("/books", aData);
+            _oDialog.open();
+        }
     }
 
-    var oModule = {
+    return {
         onMarkAsRead: function () {
             var aCtxs = getSelectedContexts();
             if (!aCtxs.length) { MessageToast.show("Please select at least one book"); return; }
             var oModel = aCtxs[0].getModel();
             Promise.all(aCtxs.map(function (oCtx) {
-                return oModel.bindContext("/markAsRead(...)").invoke(undefined, { bookId: oCtx.getProperty("ID") });
+                var oBinding = oModel.bindContext("/markAsRead(...)");
+                oBinding.setParameter("bookId", oCtx.getProperty("ID"));
+                return oBinding.invoke();
             })).then(function () {
                 MessageToast.show("Marked as read");
                 oModel.refresh();
@@ -78,10 +86,7 @@ sap.ui.define([
         onSetPriority: function () {
             var aCtxs = getSelectedContexts();
             if (!aCtxs.length) { MessageToast.show("Please select at least one book"); return; }
-            var currentPriority = aCtxs.length === 1 ? (aCtxs[0].getProperty("priority") || 0) : 5;
-            openPriorityDialog(aCtxs[0].getModel(), aCtxs, currentPriority);
+            openPriorityDialog(aCtxs[0].getModel(), aCtxs);
         }
     };
-
-    return oModule;
 });
