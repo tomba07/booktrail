@@ -11,6 +11,16 @@
                 <Text text="{suggest>/status}" visible="{= !!${suggest>/status} }"
                       class="sapUiTinyMarginBottom" />
 
+                <!-- Cover suggestion -->
+                <VBox visible="{= !!${suggest>/suggestedCoverUrl} }" class="sapUiSmallMarginBottom">
+                    <Title text="Cover" level="H5" />
+                    <HBox alignItems="Center">
+                        <Image src="{suggest>/suggestedCoverUrl}" width="4rem" height="6rem"
+                               densityAware="false" class="sapUiTinyMarginEnd" />
+                        <CheckBox text="Apply cover" selected="{suggest>/applyCover}" />
+                    </HBox>
+                </VBox>
+
                 <!-- Author suggestion -->
                 <VBox visible="{= !!${suggest>/suggestedAuthor} }" class="sapUiSmallMarginBottom">
                     <Title text="Author" level="H5" />

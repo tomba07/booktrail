@@ -15,7 +15,7 @@ sap.ui.define([
     // --- Open Library lookup ---
     function fetchBookInfo(sTitle) {
         var sUrl = "https://openlibrary.org/search.json?title=" +
-            encodeURIComponent(sTitle) + "&limit=1&fields=author_name,subject";
+            encodeURIComponent(sTitle) + "&limit=1&fields=author_name,subject,cover_i";
         return fetch(sUrl)
             .then(function (oResp) {
                 if (!oResp.ok) throw new Error("Open Library request failed");
@@ -23,10 +23,13 @@ sap.ui.define([
             })
             .then(function (oData) {
                 var oDoc = oData.docs && oData.docs[0];
-                if (!oDoc) return { author: null, subjects: [] };
+                if (!oDoc) return { author: null, subjects: [], coverUrl: null };
                 return {
                     author: (oDoc.author_name && oDoc.author_name[0]) || null,
-                    subjects: oDoc.subject || []
+                    subjects: oDoc.subject || [],
+                    coverUrl: oDoc.cover_i
+                        ? "https://covers.openlibrary.org/b/id/" + oDoc.cover_i + "-M.jpg"
+                        : null
                 };
             });
     }
@@ -132,6 +135,13 @@ sap.ui.define([
                     oDraftCtx.setProperty("author", sAuthor);
                 }
 
+                // Apply cover URL if selected
+                var bApplyCover = oModel.getProperty("/applyCover");
+                var sCoverUrl = oModel.getProperty("/suggestedCoverUrl");
+                if (bApplyCover && sCoverUrl && !_oBookCtx.getProperty("coverUrl")) {
+                    oDraftCtx.setProperty("coverUrl", sCoverUrl);
+                }
+
                 // 4. Create tag associations on draft
                 return Promise.all(aTags.map(function (t) {
                     return _oODataModel.bindList("/Tags", null, null,
@@ -194,9 +204,11 @@ sap.ui.define([
 
             var oSuggestModel = new JSONModel({
                 loading: true,
-                status: "Looking up “" + sTitle + "” on Open Library…",
+                status: "Looking up \"" + sTitle + "\" on Open Library...",
                 suggestedAuthor: null,
+                suggestedCoverUrl: null,
                 applyAuthor: true,
+                applyCover: true,
                 tags: []
             });
 
@@ -236,6 +248,10 @@ sap.ui.define([
 
                             if (oInfo.author && !sCurrentAuthor) {
                                 oSuggestModel.setProperty("/suggestedAuthor", oInfo.author);
+                            }
+
+                            if (oInfo.coverUrl) {
+                                oSuggestModel.setProperty("/suggestedCoverUrl", oInfo.coverUrl);
                             }
 
                             oSuggestModel.setProperty("/tags", aMatched.map(function (t) {

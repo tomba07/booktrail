@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Image src="{coverUrl}"
+           width="2.5rem"
+           height="3.5rem"
+           densityAware="false"
+           visible="{= !!${coverUrl} }"
+           alt="Cover"
+           style="object-fit: contain; object-position: center;" />
+</core:FragmentDefinition>

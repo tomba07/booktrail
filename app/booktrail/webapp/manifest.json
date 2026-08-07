@@ -196,6 +196,16 @@
                     }
                   },
                   "columns": {
+                    "CoverColumn": {
+                      "header": "",
+                      "width": "4rem",
+                      "importance": "High",
+                      "position": {
+                        "placement": "Before",
+                        "anchor": "DataField::title"
+                      },
+                      "template": "com.mteschke.booktrail.booktrail.ext.CoverColumn"
+                    },
                     "PriorityColumn": {
                       "header": "Priority",
                       "width": "6em",

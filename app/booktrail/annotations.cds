@@ -96,6 +96,7 @@ annotate service.Books with @(
             $Type : 'UI.DataField',
             Value : author,
         },
+        ImageUrl : coverUrl,
     },
     UI.DataPoint #Priority : {
         Value : priority,
@@ -183,7 +184,10 @@ annotate service.Books with @(
 );
 
 annotate service.Books with {
-    title     @Common.Label : 'Title';
+    coverUrl  @(
+        Common.Label : 'Cover',
+        UI.IsImageURL : true
+    );
     author    @Common.Label : 'Author';
     read      @Common.Label : 'Read';
     listened  @Common.Label : 'Listened';

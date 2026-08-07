@@ -14,6 +14,7 @@ entity Books {
         finished  : Boolean = (read or listened);
         rating    : Decimal(3,1);
         priority  : Integer default 0;
+        coverUrl  : String;
         tags      : Composition of many Books_Tags on tags.book = $self;
 }
 

@@ -2,9 +2,3 @@ Properties:
 - Quotes/Notes?
 
 Improve Detail Page
-
-Book Creation
-
-AI Book Creation
-
-OVP
