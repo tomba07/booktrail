@@ -1,7 +1,7 @@
 using CatalogService as service from '../../srv/catalog-service';
 annotate service.Books with @(
     UI.SelectionFields : [
-        read,
+        finished,
         author,
     ],
     UI.PresentationVariant : {
@@ -23,7 +23,7 @@ annotate service.Books with @(
         Text : 'Finished',
         SelectionVariant : {
             SelectOptions : [{
-                PropertyName : read,
+                PropertyName : finished,
                 Ranges : [{ Sign : #I, Option : #EQ, Low : 'true' }],
             }],
         },
@@ -36,7 +36,7 @@ annotate service.Books with @(
         Text : 'Unfinished',
         SelectionVariant : {
             SelectOptions : [{
-                PropertyName : read,
+                PropertyName : finished,
                 Ranges : [{ Sign : #I, Option : #EQ, Low : 'false' }],
             }],
         },
@@ -161,13 +161,8 @@ annotate service.Books with @(
         },
         {
             $Type : 'UI.DataField',
-            Label : 'Read',
-            Value : read,
-        },
-        {
-            $Type : 'UI.DataField',
-            Label : 'Listened',
-            Value : listened,
+            Label : 'Finished',
+            Value : finished,
         },
         {
             $Type : 'UI.DataFieldForAnnotation',
@@ -182,6 +177,7 @@ annotate service.Books with {
     author    @Common.Label : 'Author';
     read      @Common.Label : 'Read';
     listened  @Common.Label : 'Listened';
+    finished  @Common.Label : 'Finished';
     rating    @(Common.Label : 'Rating', UI.Hidden : { $edmJson : { $Not : { $Path : 'read' } } });
     priority  @(
         Common.Label : 'Priority',
@@ -219,6 +215,12 @@ annotate service.Tags with @(
 annotate service.Tags with {
     name @Common.Label : 'Tag';
 };
+
+annotate service.Books with @(
+    Capabilities.FilterRestrictions : {
+        NonFilterableProperties : [ IsActiveEntity ]
+    }
+);
 
 annotate service.Books_Tags with @(
     UI.LineItem #Tags : [{

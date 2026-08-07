@@ -151,6 +151,7 @@
               "contextPath": "/Books",
               "variantManagement": "None",
               "initialLoad": "Enabled",
+              "showDraftToggle": false,
               "navigation": {
                 "Books": {
                   "detail": {

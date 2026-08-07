@@ -11,6 +11,7 @@ entity Books {
         author   : String(100);
         read      : Boolean default false;
         listened  : Boolean default false;
+        finished  : Boolean = (read or listened);
         rating    : Decimal(3,1);
         priority  : Integer default 0;
         tags      : Composition of many Books_Tags on tags.book = $self;
