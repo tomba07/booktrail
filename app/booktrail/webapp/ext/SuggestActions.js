@@ -74,7 +74,10 @@ sap.ui.define([
             .then(function (oResult) {
                 var aMatched = [];
                 oResult.labels.forEach(function (sLabel, i) {
-                    if (oResult.scores[i] > 0.4) aMatched.push(sLabel);
+                    if (oResult.scores[i] > 0.4) aMatched.push({
+                        name: sLabel,
+                        score: Math.round(oResult.scores[i] * 100)
+                    });
                 });
                 return aMatched;
             })
@@ -85,7 +88,7 @@ sap.ui.define([
                         return s.toLowerCase().includes(sTag.toLowerCase()) ||
                             sTag.toLowerCase().includes(s.toLowerCase());
                     });
-                });
+                }).map(function (n) { return { name: n, score: null }; });
             });
     }
 
@@ -103,29 +106,66 @@ sap.ui.define([
             var bApplyAuthor = oModel.getProperty("/applyAuthor");
             var sAuthor = oModel.getProperty("/suggestedAuthor");
             var aTags = oModel.getProperty("/tags").filter(function (t) { return t.selected; });
+            _oDialog.close();
 
-            if (bApplyAuthor && sAuthor && _oBookCtx) {
-                _oBookCtx.setProperty("author", sAuthor);
+            if (!bApplyAuthor && !aTags.length) {
+                MessageToast.show("Nothing to apply");
+                return;
             }
 
-            if (aTags.length && _oBookCtx && _oODataModel) {
-                Promise.all(aTags.map(function (t) {
+            // 1. Create draft via draftEdit
+            _oODataModel.bindContext("CatalogService.draftEdit(...)", _oBookCtx, {
+                $$inheritExpandSelect: true
+            }).invoke(undefined, { PreserveChanges: false })
+            .then(function () {
+                // 2. Get draft context
+                var sActivePath = _oBookCtx.getPath();
+                var sDraftPath = sActivePath.replace("IsActiveEntity=true", "IsActiveEntity=false");
+                var oDraftCtx = _oODataModel.bindContext(sDraftPath).getBoundContext();
+
+                if (!oDraftCtx) {
+                    throw new Error("Draft context not found");
+                }
+
+                // 3. Apply author
+                if (bApplyAuthor && sAuthor) {
+                    oDraftCtx.setProperty("author", sAuthor);
+                }
+
+                // 4. Create tag associations on draft
+                return Promise.all(aTags.map(function (t) {
                     return _oODataModel.bindList("/Tags", null, null,
                         [new Filter("name", FilterOperator.EQ, t.name)])
                         .requestContexts(0, 1)
                         .then(function (aCtxs) {
                             if (!aCtxs.length) return;
                             var sTagId = aCtxs[0].getProperty("ID");
-                            _oODataModel.bindList("tags", _oBookCtx).create({ tag_ID: sTagId });
+                            return _oODataModel.bindList("tags", oDraftCtx, [], [], {
+                                $$ownRequest: true
+                            }).create({ tag_ID: sTagId }).created();
                         });
-                })).then(function () {
-                    MessageToast.show("Suggestions applied");
-                    _oODataModel.refresh();
+                })).then(function () { return oDraftCtx; });
+            })
+            .then(function (oDraftCtx) {
+                // 5. Prepare + activate draft
+                return _oODataModel.bindContext(
+                    "CatalogService.draftPrepare(...)", oDraftCtx
+                ).invoke(undefined, { SideEffectsQualifier: "" })
+                .then(function () {
+                    return _oODataModel.bindContext(
+                        "CatalogService.draftActivate(...)", oDraftCtx
+                    ).invoke();
                 });
-            } else {
+            })
+            .then(function () {
                 MessageToast.show("Suggestions applied");
-            }
-            _oDialog.close();
+                // Full reload needed: OData model refresh alone doesn't re-render
+                // the Tags table section after draft activation
+                window.location.reload();
+            })
+            .catch(function (e) {
+                MessageToast.show("Error: " + (e.message || e));
+            });
         },
         onCancelSuggestions: function () {
             _oDialog.close();
@@ -184,22 +224,22 @@ sap.ui.define([
                     var aCurrentTagNames = aResults[2].map(function (c) {
                         return c.getProperty("tag/name");
                     });
-                    // Only suggest tags not already on the book
                     var aAvailableTags = aAllTags.filter(function (n) {
                         return aCurrentTagNames.indexOf(n) === -1;
                     });
 
-                    oSuggestModel.setProperty("/loading", false);
-
-                    if (oInfo.author && !sCurrentAuthor) {
-                        oSuggestModel.setProperty("/suggestedAuthor", oInfo.author);
-                    }
-
+                    // Run tag matching, then update everything at once
                     return matchTags(oInfo.subjects, aAvailableTags, oSuggestModel)
                         .then(function (aMatched) {
+                            oSuggestModel.setProperty("/loading", false);
                             oSuggestModel.setProperty("/status", "");
-                            oSuggestModel.setProperty("/tags", aMatched.map(function (n) {
-                                return { name: n, selected: true };
+
+                            if (oInfo.author && !sCurrentAuthor) {
+                                oSuggestModel.setProperty("/suggestedAuthor", oInfo.author);
+                            }
+
+                            oSuggestModel.setProperty("/tags", aMatched.map(function (t) {
+                                return { name: t.name, score: t.score, selected: true };
                             }));
                         });
                 }).catch(function (e) {

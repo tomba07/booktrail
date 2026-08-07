@@ -4,7 +4,7 @@
             <VBox class="sapUiSmallMargin">
                 <!-- Loading -->
                 <FlexBox justifyContent="Center" visible="{suggest>/loading}" class="sapUiMediumMarginBottom">
-                    <BusyIndicator size="2rem" />
+                    <BusyIndicator />
                 </FlexBox>
 
                 <!-- Status message -->
@@ -22,8 +22,15 @@
                     <Title text="Tags" level="H5" />
                     <List items="{suggest>/tags}" showSeparators="None">
                         <CustomListItem>
-                            <CheckBox text="{suggest>name}" selected="{suggest>selected}"
-                                      class="sapUiTinyMarginTop" />
+                            <HBox alignItems="Center" class="sapUiTinyMarginTop">
+                                <CheckBox selected="{suggest>selected}" />
+                                <Text text="{suggest>name}" />
+                                <ObjectStatus
+                                    text="{= ${suggest>score} !== null ? ${suggest>score} + '%' : '' }"
+                                    visible="{= ${suggest>score} !== null }"
+                                    state="{= ${suggest>score} >= 70 ? 'Success' : ${suggest>score} >= 50 ? 'Warning' : 'Error' }"
+                                    class="sapUiTinyMarginBegin" />
+                            </HBox>
                         </CustomListItem>
                     </List>
                 </VBox>

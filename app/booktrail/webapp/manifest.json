@@ -239,7 +239,7 @@
                     "suggestInfo": {
                       "press": "com.mteschke.booktrail.booktrail.ext.SuggestActions.onSuggestInfo",
                       "text": "Suggest Info",
-                      "enabled": true
+                      "enabled": "{= ${ui>/isEditable} !== true }"
                     }
                   }
                 }
