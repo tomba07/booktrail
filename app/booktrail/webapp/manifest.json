@@ -231,7 +231,7 @@
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
-              "editableHeaderContent": false,
+              "editableHeaderContent": true,
               "contextPath": "/Books",
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.FieldGroup#Status": {

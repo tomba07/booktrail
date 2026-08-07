@@ -6,7 +6,7 @@ entity Tags {
 }
 
 entity Books {
-    key ID       : Integer;
+    key ID       : UUID @Core.Computed;
         title    : String(200) not null;
         author   : String(100);
         read      : Boolean default false;

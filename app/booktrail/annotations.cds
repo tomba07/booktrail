@@ -118,6 +118,16 @@ annotate service.Books with @(
         Data : [
             {
                 $Type : 'UI.DataField',
+                Label : 'Title',
+                Value : title,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'Author',
+                Value : author,
+            },
+            {
+                $Type : 'UI.DataField',
                 Label : 'Read',
                 Value : read,
             },
@@ -184,6 +194,8 @@ annotate service.Books with {
         UI.Hidden : false
     );
 };
+
+annotate service.Books with @Common.SemanticKey : [title];
 
 annotate service.Tags with @(
     UI.HeaderInfo : {

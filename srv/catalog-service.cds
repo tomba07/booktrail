@@ -9,6 +9,6 @@ service CatalogService {
 
     entity Books_Tags as projection on booktrail.Books_Tags;
 
-    action markAsRead(bookId : Integer)               returns Boolean;
-    action setPriority(bookId : Integer, priority : Integer) returns Boolean;
+    action markAsRead(bookId : UUID)               returns Boolean;
+    action setPriority(bookId : UUID, priority : Integer) returns Boolean;
 }
