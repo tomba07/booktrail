@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog id="suggestDialog" title="Suggest Info" contentWidth="26rem" draggable="true">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <!-- Loading -->
+                <FlexBox justifyContent="Center" visible="{suggest>/loading}" class="sapUiMediumMarginBottom">
+                    <BusyIndicator size="2rem" />
+                </FlexBox>
+
+                <!-- Status message -->
+                <Text text="{suggest>/status}" visible="{= !!${suggest>/status} }"
+                      class="sapUiTinyMarginBottom" />
+
+                <!-- Author suggestion -->
+                <VBox visible="{= !!${suggest>/suggestedAuthor} }" class="sapUiSmallMarginBottom">
+                    <Title text="Author" level="H5" />
+                    <CheckBox text="{suggest>/suggestedAuthor}" selected="{suggest>/applyAuthor}" />
+                </VBox>
+
+                <!-- Tag suggestions -->
+                <VBox visible="{= ${suggest>/tags/length} > 0 }" class="sapUiSmallMarginBottom">
+                    <Title text="Tags" level="H5" />
+                    <List items="{suggest>/tags}" showSeparators="None">
+                        <CustomListItem>
+                            <CheckBox text="{suggest>name}" selected="{suggest>selected}"
+                                      class="sapUiTinyMarginTop" />
+                        </CustomListItem>
+                    </List>
+                </VBox>
+
+                <!-- Empty state -->
+                <Text text="No suggestions found." class="sapUiSmallMarginTop"
+                      visible="{= !${suggest>/loading} &amp;&amp; !${suggest>/suggestedAuthor} &amp;&amp; ${suggest>/tags/length} === 0 &amp;&amp; !${suggest>/status} }" />
+            </VBox>
+        </content>
+        <beginButton>
+            <Button id="suggestApplyBtn" text="Apply" type="Emphasized"
+                    enabled="{= !${suggest>/loading} }"
+                    press=".onApplySuggestions" />
+        </beginButton>
+        <endButton>
+            <Button text="Cancel" press=".onCancelSuggestions" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

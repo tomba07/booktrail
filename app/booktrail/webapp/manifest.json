@@ -233,6 +233,17 @@
             "settings": {
               "editableHeaderContent": true,
               "contextPath": "/Books",
+              "content": {
+                "header": {
+                  "actions": {
+                    "suggestInfo": {
+                      "press": "com.mteschke.booktrail.booktrail.ext.SuggestActions.onSuggestInfo",
+                      "text": "Suggest Info",
+                      "enabled": true
+                    }
+                  }
+                }
+              },
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.FieldGroup#Status": {
                   "fields": {
