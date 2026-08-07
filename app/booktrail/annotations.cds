@@ -97,11 +97,20 @@ annotate service.Books with @(
             Value : author,
         },
     },
+    UI.DataPoint #Priority : {
+        Value : priority,
+        Title : 'Priority',
+    },
     UI.HeaderFacets : [
         {
             $Type : 'UI.ReferenceFacet',
             Target : '@UI.DataPoint#Rating',
             ![@UI.Hidden] : { $edmJson : { $Not : { $Path : 'rating' } } },
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.DataPoint#Priority',
+            ![@UI.Hidden] : { $edmJson : { $Not : { $Path : 'priority' } } },
         },
     ],
     UI.FieldGroup #Status : {

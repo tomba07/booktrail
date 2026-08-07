@@ -1,11 +1,5 @@
-Tidy up
-
 Properties:
-- new priority (1-10): view: progress bar, edit: slider
-- Category/Genre
 - Quotes/Notes?
-
-Shell for back button etc.
 
 Improve Detail Page
 
