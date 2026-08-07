@@ -129,6 +129,11 @@ annotate service.Books with @(
             },
             {
                 $Type : 'UI.DataField',
+                Label : 'Cover URL',
+                Value : coverUrl,
+            },
+            {
+                $Type : 'UI.DataField',
                 Label : 'Read',
                 Value : read,
             },
