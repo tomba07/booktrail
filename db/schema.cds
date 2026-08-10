@@ -11,7 +11,6 @@ entity Books {
         author   : String(100);
         read      : Boolean default false;
         listened  : Boolean default false;
-        startedAt : Date;
         finishedAt : Date;
         finished  : Boolean = (read or listened);
         rating    : Decimal(3,1);
