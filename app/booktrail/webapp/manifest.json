@@ -193,6 +193,12 @@
                       "text": "Set Priority",
                       "press": "com.mteschke.booktrail.booktrail.ext.BookActions.onSetPriority",
                       "requiresSelection": true
+                    },
+                    "checkAvailability": {
+                      "text": "Check Availability",
+                      "press": "com.mteschke.booktrail.booktrail.ext.AvailabilityActions.onCheckAvailabilityFromList",
+                      "requiresSelection": true,
+                      "enabled": "com.mteschke.booktrail.booktrail.ext.AvailabilityActions.isCheckAvailabilityEnabled"
                     }
                   },
                   "columns": {

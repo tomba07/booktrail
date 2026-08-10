@@ -5,6 +5,85 @@ sap.ui.define(
 
     var _oAvailabilityDialog = null;
 
+    function openAvailabilityDialog(oBookCtx) {
+      if (!oBookCtx) {
+        MessageToast.show("No book selected");
+        return;
+      }
+
+      var sTitle = oBookCtx.getProperty("title");
+      var sAuthor = oBookCtx.getProperty("author");
+
+      if (!sTitle) {
+        MessageToast.show("Book has no title");
+        return;
+      }
+
+      var oAvailabilityModel = new JSONModel({
+        loading: true,
+        status: 'Checking "' + sTitle + '"...',
+        title: null,
+        author: null,
+        coverUrl: null,
+        availabilityText: null,
+        availabilityState: "None",
+        location: null,
+        callNumber: null,
+        editions: []
+      });
+
+      var pDialog = _oAvailabilityDialog
+        ? Promise.resolve(_oAvailabilityDialog)
+        : Fragment.load({
+            name: "com.mteschke.booktrail.booktrail.ext.AvailabilityDialog",
+            controller: oController
+          }).then(function (oDialog) {
+            _oAvailabilityDialog = oDialog;
+            return oDialog;
+          });
+
+      return pDialog
+        .then(function (oDialog) {
+          oDialog.setModel(oAvailabilityModel, "availability");
+          oDialog.open();
+
+          return fetchLibraryAvailability(sTitle);
+        })
+        .then(function (aResults) {
+          var oMatch = findBestMatch(aResults, sTitle, sAuthor);
+
+          oAvailabilityModel.setProperty("/loading", false);
+          oAvailabilityModel.setProperty("/status", "");
+
+          if (!oMatch) {
+            return;
+          }
+
+          var oMapped = mapAvailabilityResult(oMatch);
+
+          if (!oMapped) {
+            return;
+          }
+
+          oAvailabilityModel.setData({
+            loading: false,
+            status: "",
+            title: oMapped.title,
+            author: oMapped.author,
+            coverUrl: oMapped.coverUrl,
+            availabilityText: oMapped.availabilityText,
+            availabilityState: oMapped.availabilityState,
+            location: oMapped.location,
+            callNumber: oMapped.callNumber,
+            editions: oMapped.editions
+          });
+        })
+        .catch(function (oError) {
+          oAvailabilityModel.setProperty("/loading", false);
+          oAvailabilityModel.setProperty("/status", "Error: " + (oError.message || oError));
+        });
+    }
+
     // --- Mountain View Library / Vega lookup ---
     function fetchLibraryAvailability(sTitle) {
       var sUrl = "https://na5.iiivega.com/api/search-result/search/format-groups";
@@ -176,8 +255,6 @@ sap.ui.define(
       onCheckAvailability: function () {
         var oView = null;
 
-        // FPMHelper doesn't pass a normal event/context,
-        // so locate the Books object page via the registry.
         sap.ui.core.Element.registry.forEach(function (oElement) {
           if (oElement.getId && oElement.getId() === "com.mteschke.booktrail.booktrail::BooksObjectPage") {
             oView = oElement;
@@ -191,107 +268,28 @@ sap.ui.define(
 
         var oBookCtx = oView.getBindingContext && oView.getBindingContext();
 
-        if (!oBookCtx) {
-          MessageToast.show("No book context");
-          return;
-        }
-
-        var sTitle = oBookCtx.getProperty("title");
-
-        var sAuthor = oBookCtx.getProperty("author");
-
-        if (!sTitle) {
-          MessageToast.show("Book has no title");
-          return;
-        }
-
-        var oAvailabilityModel = new JSONModel({
-          loading: true,
-
-          status: 'Checking "' + sTitle + '"...',
-
-          title: null,
-          author: null,
-          coverUrl: null,
-
-          availabilityText: null,
-          availabilityState: "None",
-
-          location: null,
-          callNumber: null,
-
-          editions: []
-        });
-
-        var pDialog = _oAvailabilityDialog
-          ? Promise.resolve(_oAvailabilityDialog)
-          : Fragment.load({
-              name: "com.mteschke.booktrail.booktrail.ext.AvailabilityDialog",
-              controller: oController
-            }).then(function (oDialog) {
-              _oAvailabilityDialog = oDialog;
-
-              return oDialog;
-            });
-
-        pDialog
-          .then(function (oDialog) {
-            oDialog.setModel(oAvailabilityModel, "availability");
-
-            oDialog.open();
-
-            return fetchLibraryAvailability(sTitle);
-          })
-          .then(function (aResults) {
-            var oMatch = findBestMatch(aResults, sTitle, sAuthor);
-
-            oAvailabilityModel.setProperty("/loading", false);
-
-            oAvailabilityModel.setProperty("/status", "");
-
-            // No physical book result found.
-            // Leaving title empty activates the
-            // empty state in the fragment.
-            if (!oMatch) {
-              return;
-            }
-
-            var oMapped = mapAvailabilityResult(oMatch);
-
-            if (!oMapped) {
-              return;
-            }
-
-            oAvailabilityModel.setData({
-              loading: false,
-              status: "",
-
-              title: oMapped.title,
-              author: oMapped.author,
-              coverUrl: oMapped.coverUrl,
-
-              availabilityText: oMapped.availabilityText,
-
-              availabilityState: oMapped.availabilityState,
-
-              location: oMapped.location,
-
-              callNumber: oMapped.callNumber,
-
-              editions: oMapped.editions
-            });
-          })
-          .catch(function (oError) {
-            oAvailabilityModel.setProperty("/loading", false);
-
-            oAvailabilityModel.setProperty("/status", "Error: " + (oError.message || oError));
-          });
+        openAvailabilityDialog(oBookCtx);
       },
 
       onCloseAvailability: function () {
         if (_oAvailabilityDialog) {
           _oAvailabilityDialog.close();
         }
+      },
+
+      isCheckAvailabilityEnabled: function (oBindingContext, aSelectedContexts) {
+        return !!aSelectedContexts && aSelectedContexts.length === 1;
+      },
+
+      onCheckAvailabilityFromList: function (oBindingContext, aSelectedContexts) {
+        var aContexts = aSelectedContexts || [];
+
+        if (aContexts.length !== 1) {
+          MessageToast.show("Please select exactly one book");
+          return;
+        }
+
+        openAvailabilityDialog(aContexts[0]);
       }
     };
 
