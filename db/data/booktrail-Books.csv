@@ -1,151 +1,151 @@
-ID,title,author,read,listened,rating,priority
-b4382af7-cb0e-4994-bfdb-cfa566086590,Ready Player One,Ernest Cline,false,false,,7
-a5cdb456-c17f-408c-b186-180befbff0de,The Golden Compass,Philip Pullman,false,false,,5
-d76d67c5-3883-4616-932b-84041376e64c,Slaughterhouse-Five,Kurt Vonnegut,false,false,,8
-2538fa73-02ee-42d0-a240-2b867b89edac,Diaspora,Greg Egan,false,false,,6
-ffd44cd8-634d-42de-9332-d5454c914a74,Stranger in a Strange Land,Robert A. Heinlein,false,false,,4
-3a15c88a-9245-4ece-9193-25d7206be2e1,Dune,Frank Herbert,false,false,,10
-0da92436-3cd7-4cae-b3e8-ac54752cf26c,Anna Karenina,Leo Tolstoy,false,false,,3
-892d0fda-b72c-4bc3-ab52-95260c0e177f,Père Goriot,Honoré de Balzac,false,false,,2
-ef5580ca-84b1-459f-bf7d-8e4b3776d150,Atlas Shrugged,Ayn Rand,false,false,,5
-c2873447-212c-4b29-9e00-de58e6ff3294,Collected Fictions,Jorge Luis Borges,false,false,,6
-2cffee8a-ba0a-496e-813d-56e8dc154f05,Consider Phlebas,Iain M. Banks,true,false,,9
-ab53c91a-d57d-489c-a64a-ca534b3a4bd7,Surface Detail,Iain M. Banks,false,false,,7
-50965173-194a-4f27-a004-2401c3d3df2e,The Player of Games,Iain M. Banks,false,false,,8
-de82c8f7-1db2-4914-9ac6-863228bc2ec6,Project Hail Mary,Andy Weir,false,false,,9
-c15ee22b-8663-4421-b554-4576f9ca75b0,The Three-Body Problem,Liu Cixin,false,false,,8
-9936754a-1fc4-4aaf-b17f-0791c1bf4d29,Siddhartha,Hermann Hesse,false,false,,6
-73a80a47-8947-4a83-a4fd-4f0604759358,The Metamorphosis,Franz Kafka,true,false,,7
-537c5c99-d95e-404c-b289-881d6663c265,Snow Crash,Neal Stephenson,false,false,,8
-2b32f341-944d-452d-9fa5-ce282711cc5a,Infinite Jest,David Foster Wallace,false,false,,4
-8ab475ed-7f21-46ba-8478-6ebc1a4747ef,Bhagavad Gita,Ancient,false,false,,5
-d47e9414-9252-4db9-86cd-a4dc57d48e31,The Old Man and the Sea,Ernest Hemingway,false,true,,0
-1121edf3-d5ff-4857-835c-aaae11f67744,Notes from Underground,Fyodor Dostoevsky,false,false,,0
-a1200ca6-2f5d-4081-8f46-05202f4f5865,The Idiot,Fyodor Dostoevsky,true,false,,0
-2c20f0c3-2b39-40a5-bc82-c352ffc0c5d3,The Metamorphosis of Prime Intellect,Roger Williams,false,false,,0
-1b3ea8e0-2aa0-4aad-8e45-ac9c944ecf05,Ubik,Philip K. Dick,false,false,,0
-cc478127-2b2c-4d4e-9a16-e381345fdc26,The Light Pirate,Lily Brooks-Dalton,false,false,,0
-484ab4ba-674b-45fe-a372-38f5ff65c9c0,The Brothers Karamazov,Fyodor Dostoevsky,false,false,,0
-d585117b-c4ab-4b0d-bcb3-46715894f86e,Catch-22,Joseph Heller,false,false,,0
-e25c4606-35ba-409d-b79c-2d766d1c968f,Out of the Silent Planet,C.S. Lewis,true,false,,0
-824f2638-7cc2-4e3b-b487-d28787702c20,Perelandra,C.S. Lewis,true,false,,0
-694fe76b-df98-4ebd-8d42-7a7f7838c690,That Hideous Strength,C.S. Lewis,false,false,,0
-97324268-5329-4a03-86c8-c37904d76ed2,Paradise Lost,John Milton,false,false,,0
-39276fb7-0ef4-4659-9f0b-cc1380ccb0e1,Book of Enoch,Ancient,false,false,,0
-753a5ec5-5aab-4269-b138-61669490e43c,Gospel of Thomas,Ancient,false,false,,0
-69c55a9b-1132-41d8-b762-3cc72615660c,The Stranger,Albert Camus,true,false,,0
-288c74ba-3ac0-4eba-b05a-71a2410eab4c,The Myth of Sisyphus,Albert Camus,false,false,,0
-e71b91df-3975-4061-a114-270d45125bf1,The Fall,Albert Camus,false,false,,0
-e48beb7f-2fc1-4c71-a138-3f9ab6a0f64f,The Trial,Franz Kafka,false,false,,0
-a14495c1-ce9b-457e-91e8-78d032a18224,American Gods,Neil Gaiman,true,false,,0
-0545ecb8-18d7-4c67-97ab-735df35eebfa,Frankenstein,Mary Shelley,false,false,,0
-84e0685a-7c92-4d03-86e8-9fce23fc20e4,American Psycho,Bret Easton Ellis,false,false,,0
-83b7eb23-7a7d-4393-adc6-369353bf4fba,Gravity's Rainbow,Thomas Pynchon,false,false,,0
-8d671aa0-712d-4d4e-8cc1-02bf20fd654e,My Heart,Christof Koch,false,false,,0
-31d6db7b-8807-4db8-9127-d2e7a506a46a,Justice,Michael Sandel,false,false,,0
-4f9472f9-f854-4c8d-a47a-b21ed89ad731,Build a Large Language Model from Scratch,Sebastian Raschka,false,false,,9
-8eb68288-031b-4e20-8a58-c24d20236963,Patterns of Enterprise Application Architecture,Martin Fowler,false,false,,7
-c103e617-aead-4582-93ec-27fee6ce3919,Nicomachean Ethics,Aristotle,false,false,,0
-a0b2a4d5-7cd6-4dd8-acd1-967bf6d6034d,The Unexpected Truth About Animals,Lucy Cooke,false,false,,0
-14e361fa-7111-4275-9365-f00bcc82c5b9,Hagakure,Yamamoto Tsunetomo,false,false,,0
-805ffe70-cb4c-41f6-9412-04dca4861157,Surely You're Joking Mr. Feynman!,Richard P. Feynman,false,false,,8
-2b341f09-9c76-47d8-8d2b-3ec00f66e95c,How to Build a Car,Adrian Newey,false,false,,0
-b43aa90b-caea-4106-a1e2-3b0a03fac56b,The Power of Mindful Learning,Ellen J. Langer,false,false,,0
-e0df2dd2-5c80-48f6-b68d-a716b6507496,Mindfulness,Ellen J. Langer,false,false,,0
-db15e0b5-4c2f-4f67-ae9f-846ccd659ef3,The 48 Laws of Power,Robert Greene,false,false,,0
-d281d5a7-c086-4698-a502-e6a471f0b28c,War Is a Racket,Smedley Butler,false,false,,0
-3e813ae7-2422-4c9f-94ee-bcbaf07af12b,Flow,Mihaly Csikszentmihalyi,false,false,,0
-1533b390-cbd5-4a28-bdff-198ad3a2a07e,At Last a Life,Paul David,false,false,,0
-54b1d210-0372-4070-9c25-8cb0e953eadc,I Am a Strange Loop,Douglas Hofstadter,false,false,,0
-15a84688-60a0-4859-833a-c8ba323a29f4,Surfaces and Essences,Douglas Hofstadter,false,false,,0
-2ec67eb4-623b-44a1-87c4-5cd7a7f066ef,My Big TOE,Thomas Campbell,false,false,,0
-cf8ea63c-d8ff-4f91-8218-460c3e8b29cb,The Most Good You Can Do,Peter Singer,false,false,,0
-f5d83980-cb8c-47fb-b08d-a6ae7715433d,Hegel,Peter Singer,false,false,,0
-bb7c6781-c940-46c9-890c-6adbc07dec2d,The Creature from Jekyll Island,G. Edward Griffin,false,false,,0
-25ace1ae-2973-4603-9a12-a196eda6cd89,Thinkertoys,Michael Michalko,false,false,,0
-8831987a-9107-4bd8-a0b8-581aa47bd99a,Why? The Purpose of the Universe,Philip Goff,false,false,,0
-64e7cde3-6bd6-47c5-bdba-16ea830d6f9d,Zero,Charles Seife,false,false,,0
-92c52da5-c6be-459e-b38c-8e1f147f6efb,Tripping on Utopia,Benjamin Breen,false,false,,0
-47561706-9e57-4501-a84c-751f1b3ad8ef,The Road to Serfdom,Friedrich Hayek,false,false,,0
-f420d363-33a6-4a5f-9950-7b9a958f1438,The Beginning of Infinity,David Deutsch,false,false,,9
-ab8a24b0-922b-4b71-868f-34908206b990,The Bitcoin Standard,Saifedean Ammous,false,false,,0
-26213e41-f9f1-4848-80d6-dc5f9c3b4301,The Fiat Standard,Saifedean Ammous,false,false,,0
-6cc77abd-9007-4042-8da8-fba47633e5c1,The Sovereign Individual,James Dale Davidson,false,false,,0
-03bca376-4608-4b41-abae-cd6167a111d1,The Untethered Soul,Michael A. Singer,false,false,,0
-7335e976-71c4-4e5a-9238-2f6bc47e190f,How Not to Be Wrong,Jordan Ellenberg,false,false,,0
-586cd3c0-9e18-47fa-9d57-9d9b907256de,Shape,Jordan Ellenberg,false,false,,0
-69962450-aa34-4751-a85b-32882126a537,Data and Reality,William Kent,false,false,,0
-5e75572f-225f-4fc2-adea-ff378f23e447,Discipline and Punish,Michel Foucault,false,false,,0
-08d2abea-5e75-4e69-8789-2245b650c470,The Billionaire and the Mechanic,Julian Guthrie,false,false,,0
-922a3416-4925-4b80-9753-ddb37978a6b4,The Plague,Albert Camus,false,false,,0
-cbe32c46-3b3f-4e0a-ac0f-17c40cbf3fe5,Life 3.0,Max Tegmark,false,false,,0
-d8fa5abb-b9f7-4a2f-bc78-62bdc4083505,The Worldly Philosophers,Robert L. Heilbroner,false,false,,0
-c87127a6-4dde-4604-968e-3ba395f61dac,Sprint,Jake Knapp,false,false,,0
-0728c080-5878-4118-b12f-9a2da5933757,Clean Code,Robert C. Martin,false,false,,8
-f5ae4df6-1cad-4cb6-a30f-92baaa8f9b3d,Inspired,Marty Cagan,false,false,,9
-2c18ae14-985e-429c-948b-83f3ef082b02,The Second Machine Age,Erik Brynjolfsson,false,false,,0
-30535e76-387c-4877-b416-2165665d7078,Make Time,Jake Knapp,false,false,,0
-9ec64adc-3e8b-46e8-8785-094e50a61722,How to Win Friends and Influence People,Dale Carnegie,false,false,,0
-b40ffadc-5a84-43c9-8f89-057019055287,Sapiens,Yuval Noah Harari,false,true,,0
-54c6794d-a2a0-427d-b595-cff977f7fbff,A Programmer's Introduction to Mathematics,Jeremy Kun,false,false,,0
-b40fdc73-7145-4248-b882-f1838ecf5bba,A New Kind of Science,Stephen Wolfram,false,false,,0
-59e3939d-2eac-4ba8-bbd2-12d250396403,The Art of Doing Science and Engineering,Richard Hamming,false,false,,0
-15a53a17-5dbd-40a2-8d60-1477c53b8614,Calculus,Michael Spivak,false,false,,0
-3db6dce7-57fc-46ab-be55-16554868f434,Autobiography of a Yogi,Paramahansa Yogananda,false,false,,0
-6f56b9fa-879a-4024-9ca2-be5f3ab8e7b9,Why Machines Learn,Anil Ananthaswamy,false,false,,0
-5e7cb25b-370e-42d4-a1b6-9236b8a1572e,Blown Away,Herb Payson,false,false,,0
-fc443632-71c0-485a-89fd-1637725ab569,Rarotonga,Christian Williams,false,false,,0
-57fea352-c4d3-4707-afda-7683bf342163,The Incredible Voyage,Tristan Jones,false,false,,0
-a9aeeda4-80d4-4c6c-b059-e99a00bfc380,Zero to One,Peter Thiel,false,false,,9
-34ef24df-6c5c-44b6-848e-69cd1a866146,The Creative Act: A Way of Being,Rick Rubin,false,false,,0
-c77758e8-51b7-49c9-80bb-58c7abae4b3e,The Holographic Universe,Michael Talbot,false,false,,0
-e0fa3f9c-a038-49bd-9034-2231de4eec1c,The Power of Control,Tom Pane,false,false,,0
-1a9ad3f3-3dcd-4426-8bcf-1882a89f501a,The Psychology of Invention in the Mathematical Field,Jacques Hadamard,false,false,,0
-547615c7-d831-4017-b347-0fcec58ccd44,The Art of Computer Programming,Donald Knuth,false,false,,0
-1699b956-7da5-4ac9-9dca-e64bd0080470,The Pocket,Thich Nhat Hanh,false,false,,0
-d3d0d5b6-27bb-459d-9f6e-88576ef69609,Tao Te Ching,Lao Tzu,false,false,,0
-863df044-6d32-4beb-a587-6d00140f88f6,Good Energy,Casey Means,false,false,,0
-8f78afc3-257a-4a85-b118-583d413df440,Mycelium Running,Paul Stamets,false,false,,0
-d40ff07d-1ff9-48a2-8811-54dcabe9fe10,Fewer Better Things,Glenn Adamson,false,false,,0
-6fcc8c70-b4b4-45c9-8f0c-f323c712a406,Softwar,Jason Paul Lowery,false,false,,0
-677b01d4-b913-423c-bbc2-a59491f3e025,The Mathematical Theory of Communication,Claude Shannon,false,false,,0
-170ce46f-2c40-43d7-b1f9-28e28b54fba2,Transformer,Nick Lane,false,false,,0
-956517a4-b537-4233-a96f-d974bb6f7a88,Log of the Mahina,John Neal,false,false,,0
-ccc9d5f2-f0f4-43c7-a1b0-a0c5eef96726,Emblems of Mind,Edward Rothstein,false,false,,0
-4800e22f-73e5-458a-b98b-466f70f8197c,The Code Book,Simon Singh,false,false,,0
-5c94e029-814c-4c09-a172-a4537f6ad82a,Concrete Mathematics,Ronald Graham,false,false,,0
-75242519-0dfc-4b6a-b44f-d7729bc726b4,The Asset Economy,Lisa Adkins,false,false,,0
-60a80993-149c-40dc-832a-88f25ea5c755,Gravitation,Charles W. Misner,false,false,,0
-827937fa-a68e-41e1-925a-ffb794e8871e,Spacetime and Geometry,Sean M. Carroll,false,false,,0
-2974cd24-69a0-4b1a-8298-7be675cdc52c,The Road to Reality,Roger Penrose,false,false,,0
-753952b8-0bcd-4721-a6a9-74139f3a13e3,The Beginner's Guide to Mathematical Logic,Raymond Smullyan,false,false,,0
-2062152d-8c4d-4126-8d47-4d80d9ff00fc,To Mock a Mockingbird,Raymond Smullyan,false,false,,0
-75799bf6-52e7-488b-889f-2dbd6c6855ab,Combinators,Stephen Wolfram,false,false,,0
-247ce455-ee9f-42da-9f67-0eab6f849d1b,Man's Search for Meaning,Viktor Frankl,false,false,,9
-0c2b45a3-2912-43ef-b001-215256dd794f,Endurance,Alfred Lansing,false,false,,0
-81c26c46-af27-44ac-a462-3cc88c305a93,The Courage to Be Happy,Ichiro Kishimi,false,false,,0
-37d28df0-1baf-45d8-990d-9a305cc2ad47,Why Greatness Cannot Be Planned,Kenneth O. Stanley,false,false,,0
-c407e3e9-b289-40a9-88d1-07d87e1f3902,1 2 3 Infinity,George Gamow,false,false,,0
-c992e59f-56c4-4f91-9c90-36fb7459be9f,Simulacra and Simulation,Jean Baudrillard,false,false,,0
-b66d2087-a71d-4dda-af71-6a52f41a367e,Something Deeply Hidden,Sean Carroll,false,false,,0
-34330820-d593-4ec5-b7d7-d95e3f861535,Dhammapada,Ancient,false,false,,0
-48cce32c-fefd-45d8-8687-fd134c6ca63d,The Quran,Anonymous,false,false,,0
-32b823a4-6eff-4b11-9d1b-3d9b747bb65d,The Bible,Anonymous,false,false,,0
-d2c4ab05-2aca-432d-a11d-2fb9ef166837,Plato's Republic,Plato,false,false,,0
-157b3cdb-d676-4662-bad0-e83c406ee580,Atomic Habits,James Clear,false,true,,0
-ba371b8e-59d8-4f74-a536-96c1ce780963,Principles,Ray Dalio,true,false,,0
-5a108894-cc01-45b2-b93c-63ecb3d8b031,Foundation,Isaac Asimov,true,false,,8
-d7608041-795a-4272-9a86-d5c9402d945d,Barbarian Days,William Finnegan,true,false,,0
-46e7f550-fbeb-4a08-b0fa-676180047bdf,Search Inside Yourself,Chade-Meng Tan,true,false,,0
-06b9a21a-b35c-4d81-95ac-4615f946510e,Fifth Business,Robertson Davies,true,false,,0
-a708386e-2d0c-42a4-b27f-ced5fd669cac,The Manticore,Robertson Davies,true,false,,0
-b03b505d-aa54-445d-86c3-f86c2ff4fb87,World of Wonders,Robertson Davies,true,false,,0
-cd2d060c-fed0-4e55-bfa4-e37e88441b3e,The Hunger Games,Suzanne Collins,true,false,,0
-2691bbb4-607a-4a32-be9d-1cc11e1d7d13,Die 13½ Leben des Käpt'n Blaubär,Walter Moers,true,false,,0
-05a8185a-0486-4989-956d-01495e80bd25,Rumo & Die Wunder im Dunkeln,Walter Moers,true,false,,0
-91b54493-77c4-495f-9ec9-9f82e4162a41,Die Stadt der Träumenden Bücher,Walter Moers,true,false,,0
-c375b793-ebad-4091-8387-b73d7719393d,Ensel und Krete,Walter Moers,true,false,,0
-c69eb772-a63a-4e62-9d80-d0588c1e45c0,Eragon,Christopher Paolini,false,true,,0
-a7644bd5-80da-447a-8372-e7bee7bd1fd6,Die Physiker,Friedrich Dürrenmatt,true,false,,0
-ab30867f-b16d-408a-88c6-aab1735e60c3,Expedition ins Ungewisse,Marleen Nelen,true,false,,0
-9d85e10c-d92b-4fc3-9495-97761db04938,Der Schatten des Windes,Carlos Ruiz Zafón,true,false,,0
+ID,title,author,read,listened,startedAt,finishedAt,rating,priority,coverUrl
+03bca376-4608-4b41-abae-cd6167a111d1,The Untethered Soul,Michael A. Singer,False,False,,,,2,
+0545ecb8-18d7-4c67-97ab-735df35eebfa,Frankenstein,Mary Shelley,False,False,,,,2,
+05a8185a-0486-4989-956d-01495e80bd25,Rumo & Die Wunder im Dunkeln,Walter Moers,True,False,,,,2,
+06b9a21a-b35c-4d81-95ac-4615f946510e,Fifth Business,Robertson Davies,True,False,,,,1,
+0728c080-5878-4118-b12f-9a2da5933757,Clean Code,Robert C. Martin,False,False,,,,2,
+08d2abea-5e75-4e69-8789-2245b650c470,The Billionaire and the Mechanic,Julian Guthrie,False,False,,,,2,
+0c2b45a3-2912-43ef-b001-215256dd794f,Endurance,Alfred Lansing,False,False,,,,3,
+0da92436-3cd7-4cae-b3e8-ac54752cf26c,Anna Karenina,Leo Tolstoy,False,False,,,,3,
+1121edf3-d5ff-4857-835c-aaae11f67744,Notes from Underground,Fyodor Dostoevsky,False,False,,,,3,
+14e361fa-7111-4275-9365-f00bcc82c5b9,Hagakure,Yamamoto Tsunetomo,False,False,,,,3,
+1533b390-cbd5-4a28-bdff-198ad3a2a07e,At Last a Life,Paul David,False,False,,,,2,
+157b3cdb-d676-4662-bad0-e83c406ee580,Atomic Habits,James Clear,False,True,,,,1,
+15a53a17-5dbd-40a2-8d60-1477c53b8614,Calculus,Michael Spivak,False,False,,,,2,
+15a84688-60a0-4859-833a-c8ba323a29f4,Surfaces and Essences,Douglas Hofstadter,False,False,,,,2,
+1699b956-7da5-4ac9-9dca-e64bd0080470,The Pocket,Thich Nhat Hanh,False,False,,,,2,
+170ce46f-2c40-43d7-b1f9-28e28b54fba2,Transformer,Nick Lane,False,False,,,,2,
+1a9ad3f3-3dcd-4426-8bcf-1882a89f501a,The Psychology of Invention in the Mathematical Field,Jacques Hadamard,False,False,,,,2,
+1b3ea8e0-2aa0-4aad-8e45-ac9c944ecf05,Ubik,Philip K. Dick,False,False,,,,3,
+2062152d-8c4d-4126-8d47-4d80d9ff00fc,To Mock a Mockingbird,Raymond Smullyan,False,False,,,,3,
+247ce455-ee9f-42da-9f67-0eab6f849d1b,Man's Search for Meaning,Viktor Frankl,False,False,,,,4,https://covers.openlibrary.org/b/id/11203708-M.jpg
+2538fa73-02ee-42d0-a240-2b867b89edac,Diaspora,Greg Egan,False,False,,,,2,
+25ace1ae-2973-4603-9a12-a196eda6cd89,Thinkertoys,Michael Michalko,False,False,,,,2,
+26213e41-f9f1-4848-80d6-dc5f9c3b4301,The Fiat Standard,Saifedean Ammous,False,False,,,,2,
+2691bbb4-607a-4a32-be9d-1cc11e1d7d13,Die 13½ Leben des Käpt'n Blaubär,Walter Moers,True,False,,,,1,
+288c74ba-3ac0-4eba-b05a-71a2410eab4c,The Myth of Sisyphus,Albert Camus,False,False,,,,3,
+2974cd24-69a0-4b1a-8298-7be675cdc52c,The Road to Reality,Roger Penrose,False,False,,,,2,
+2b32f341-944d-452d-9fa5-ce282711cc5a,Infinite Jest,David Foster Wallace,False,False,,,,3,
+2b341f09-9c76-47d8-8d2b-3ec00f66e95c,How to Build a Car,Adrian Newey,False,False,,,,2,
+2c18ae14-985e-429c-948b-83f3ef082b02,The Second Machine Age,Erik Brynjolfsson,False,False,,,,2,
+2c20f0c3-2b39-40a5-bc82-c352ffc0c5d3,The Metamorphosis of Prime Intellect,Roger Williams,False,False,,,,1,
+2cffee8a-ba0a-496e-813d-56e8dc154f05,Consider Phlebas,Iain M. Banks,True,False,,,,3,https://covers.openlibrary.org/b/id/1009644-M.jpg
+2ec67eb4-623b-44a1-87c4-5cd7a7f066ef,My Big TOE,Thomas Campbell,False,False,,,,1,
+30535e76-387c-4877-b416-2165665d7078,Make Time,Jake Knapp,False,False,,,,1,
+31d6db7b-8807-4db8-9127-d2e7a506a46a,Justice,Michael Sandel,False,False,,,,2,
+32b823a4-6eff-4b11-9d1b-3d9b747bb65d,The Bible,Anonymous,False,False,,,,2,
+34330820-d593-4ec5-b7d7-d95e3f861535,Dhammapada,Ancient,False,False,,,,2,
+34ef24df-6c5c-44b6-848e-69cd1a866146,The Creative Act: A Way of Being,Rick Rubin,False,False,,,,2,
+37d28df0-1baf-45d8-990d-9a305cc2ad47,Why Greatness Cannot Be Planned,Kenneth O. Stanley,False,False,,,,2,
+39276fb7-0ef4-4659-9f0b-cc1380ccb0e1,Book of Enoch,Ancient,False,False,,,,1,
+3a15c88a-9245-4ece-9193-25d7206be2e1,Dune,Frank Herbert,False,False,,,,5,https://covers.openlibrary.org/b/id/6976407-M.jpg
+3db6dce7-57fc-46ab-be55-16554868f434,Autobiography of a Yogi,Paramahansa Yogananda,False,False,,,,3,
+3e813ae7-2422-4c9f-94ee-bcbaf07af12b,Flow,Mihaly Csikszentmihalyi,False,False,,,,2,
+46e7f550-fbeb-4a08-b0fa-676180047bdf,Search Inside Yourself,Chade-Meng Tan,True,False,,,,1,
+47561706-9e57-4501-a84c-751f1b3ad8ef,The Road to Serfdom,Friedrich Hayek,False,False,,,,1,
+4800e22f-73e5-458a-b98b-466f70f8197c,The Code Book,Simon Singh,False,False,,,,2,
+484ab4ba-674b-45fe-a372-38f5ff65c9c0,The Brothers Karamazov,Fyodor Dostoevsky,False,False,,,,2,
+48cce32c-fefd-45d8-8687-fd134c6ca63d,The Quran,Anonymous,False,False,,,,2,
+4f9472f9-f854-4c8d-a47a-b21ed89ad731,Build a Large Language Model from Scratch,Sebastian Raschka,False,False,,,,3,
+50965173-194a-4f27-a004-2401c3d3df2e,The Player of Games,Iain M. Banks,False,False,,,,3,
+537c5c99-d95e-404c-b289-881d6663c265,Snow Crash,Neal Stephenson,False,False,,,,3,
+547615c7-d831-4017-b347-0fcec58ccd44,The Art of Computer Programming,Donald Knuth,False,False,,,,2,
+54b1d210-0372-4070-9c25-8cb0e953eadc,I Am a Strange Loop,Douglas Hofstadter,False,False,,,,3,
+54c6794d-a2a0-427d-b595-cff977f7fbff,A Programmer's Introduction to Mathematics,Jeremy Kun,False,False,,,,3,
+57fea352-c4d3-4707-afda-7683bf342163,The Incredible Voyage,Tristan Jones,False,False,,,,2,
+586cd3c0-9e18-47fa-9d57-9d9b907256de,Shape,Jordan Ellenberg,False,False,,,,2,
+59e3939d-2eac-4ba8-bbd2-12d250396403,The Art of Doing Science and Engineering,Richard Hamming,False,False,,,,2,
+5a108894-cc01-45b2-b93c-63ecb3d8b031,Foundation,Isaac Asimov,True,False,,,,1,
+5c94e029-814c-4c09-a172-a4537f6ad82a,Concrete Mathematics,Ronald Graham,False,False,,,,2,
+5e75572f-225f-4fc2-adea-ff378f23e447,Discipline and Punish,Michel Foucault,False,False,,,,3,
+5e7cb25b-370e-42d4-a1b6-9236b8a1572e,Blown Away,Herb Payson,False,False,,,,4,
+60a80993-149c-40dc-832a-88f25ea5c755,Gravitation,Charles W. Misner,False,False,,,,2,
+64e7cde3-6bd6-47c5-bdba-16ea830d6f9d,Zero,Charles Seife,False,False,,,,2,
+677b01d4-b913-423c-bbc2-a59491f3e025,The Mathematical Theory of Communication,Claude Shannon,False,False,,,,2,
+694fe76b-df98-4ebd-8d42-7a7f7838c690,That Hideous Strength,C.S. Lewis,False,False,,,,1,
+69962450-aa34-4751-a85b-32882126a537,Data and Reality,William Kent,False,False,,,,2,
+69c55a9b-1132-41d8-b762-3cc72615660c,The Stranger,Albert Camus,True,False,,,,3,
+6cc77abd-9007-4042-8da8-fba47633e5c1,The Sovereign Individual,James Dale Davidson,False,False,,,,2,
+6f56b9fa-879a-4024-9ca2-be5f3ab8e7b9,Why Machines Learn,Anil Ananthaswamy,False,False,,,,2,
+6fcc8c70-b4b4-45c9-8f0c-f323c712a406,Softwar,Jason Paul Lowery,False,False,,,,2,
+7335e976-71c4-4e5a-9238-2f6bc47e190f,How Not to Be Wrong,Jordan Ellenberg,False,False,,,,2,
+73a80a47-8947-4a83-a4fd-4f0604759358,The Metamorphosis,Franz Kafka,True,False,,,,0,
+75242519-0dfc-4b6a-b44f-d7729bc726b4,The Asset Economy,Lisa Adkins,False,False,,,,2,
+753952b8-0bcd-4721-a6a9-74139f3a13e3,The Beginner's Guide to Mathematical Logic,Raymond Smullyan,False,False,,,,2,
+753a5ec5-5aab-4269-b138-61669490e43c,Gospel of Thomas,Ancient,False,False,,,,1,
+75799bf6-52e7-488b-889f-2dbd6c6855ab,Combinators,Stephen Wolfram,False,False,,,,2,
+805ffe70-cb4c-41f6-9412-04dca4861157,Surely You're Joking Mr. Feynman!,Richard P. Feynman,False,False,,,,3,
+81c26c46-af27-44ac-a462-3cc88c305a93,The Courage to Be Happy,Ichiro Kishimi,False,False,,,,2,
+824f2638-7cc2-4e3b-b487-d28787702c20,Perelandra,C.S. Lewis,True,False,,,,0,
+827937fa-a68e-41e1-925a-ffb794e8871e,Spacetime and Geometry,Sean M. Carroll,False,False,,,,2,
+83b7eb23-7a7d-4393-adc6-369353bf4fba,Gravity's Rainbow,Thomas Pynchon,False,False,,,,3,
+84e0685a-7c92-4d03-86e8-9fce23fc20e4,American Psycho,Bret Easton Ellis,False,False,,,,3,
+863df044-6d32-4beb-a587-6d00140f88f6,Good Energy,Casey Means,False,False,,,,2,
+8831987a-9107-4bd8-a0b8-581aa47bd99a,Why? The Purpose of the Universe,Philip Goff,False,False,,,,2,
+892d0fda-b72c-4bc3-ab52-95260c0e177f,Père Goriot,Honoré de Balzac,False,False,,,,3,
+8ab475ed-7f21-46ba-8478-6ebc1a4747ef,Bhagavad Gita,Ancient,False,False,,,,2,
+8d671aa0-712d-4d4e-8cc1-02bf20fd654e,My Heart,Christof Koch,False,False,,,,2,
+8eb68288-031b-4e20-8a58-c24d20236963,Patterns of Enterprise Application Architecture,Martin Fowler,False,False,,,,2,
+8f78afc3-257a-4a85-b118-583d413df440,Mycelium Running,Paul Stamets,False,False,,,,3,
+91b54493-77c4-495f-9ec9-9f82e4162a41,Die Stadt der Träumenden Bücher,Walter Moers,True,False,,,,1,
+922a3416-4925-4b80-9753-ddb37978a6b4,The Plague,Albert Camus,False,False,,,,3,
+92c52da5-c6be-459e-b38c-8e1f147f6efb,Tripping on Utopia,Benjamin Breen,False,False,,,,2,
+956517a4-b537-4233-a96f-d974bb6f7a88,Log of the Mahina,John Neal,False,False,,,,4,
+97324268-5329-4a03-86c8-c37904d76ed2,Paradise Lost,John Milton,False,False,,,,2,
+9936754a-1fc4-4aaf-b17f-0791c1bf4d29,Siddhartha,Hermann Hesse,False,False,,,,2,
+9d85e10c-d92b-4fc3-9495-97761db04938,Der Schatten des Windes,Carlos Ruiz Zafón,True,False,,,,2,
+9ec64adc-3e8b-46e8-8785-094e50a61722,How to Win Friends and Influence People,Dale Carnegie,False,False,,,,1,
+a0b2a4d5-7cd6-4dd8-acd1-967bf6d6034d,The Unexpected Truth About Animals,Lucy Cooke,False,False,,,,2,
+a1200ca6-2f5d-4081-8f46-05202f4f5865,The Idiot,Fyodor Dostoevsky,True,False,,,,0,
+a14495c1-ce9b-457e-91e8-78d032a18224,American Gods,Neil Gaiman,True,False,,,,3,
+a5cdb456-c17f-408c-b186-180befbff0de,The Golden Compass,Philip Pullman,False,False,,,,3,
+a708386e-2d0c-42a4-b27f-ced5fd669cac,The Manticore,Robertson Davies,True,False,,,,0,
+a7644bd5-80da-447a-8372-e7bee7bd1fd6,Die Physiker,Friedrich Dürrenmatt,True,False,,,,2,
+a9aeeda4-80d4-4c6c-b059-e99a00bfc380,Zero to One,Peter Thiel,False,False,,,,2,
+ab30867f-b16d-408a-88c6-aab1735e60c3,Expedition ins Ungewisse,Marleen Nelen,True,False,,,,3,
+ab53c91a-d57d-489c-a64a-ca534b3a4bd7,Surface Detail,Iain M. Banks,False,False,,,,3,
+ab8a24b0-922b-4b71-868f-34908206b990,The Bitcoin Standard,Saifedean Ammous,False,False,,,,1,
+b03b505d-aa54-445d-86c3-f86c2ff4fb87,World of Wonders,Robertson Davies,True,False,,,,0,
+b40fdc73-7145-4248-b882-f1838ecf5bba,A New Kind of Science,Stephen Wolfram,False,False,,,,2,
+b40ffadc-5a84-43c9-8f89-057019055287,Sapiens,Yuval Noah Harari,False,True,,,,1,
+b4382af7-cb0e-4994-bfdb-cfa566086590,Ready Player One,Ernest Cline,False,False,,,,2,
+b43aa90b-caea-4106-a1e2-3b0a03fac56b,The Power of Mindful Learning,Ellen J. Langer,False,False,,,,2,
+b66d2087-a71d-4dda-af71-6a52f41a367e,Something Deeply Hidden,Sean Carroll,False,False,,,,3,
+ba371b8e-59d8-4f74-a536-96c1ce780963,Principles,Ray Dalio,True,False,,,,0,
+bb7c6781-c940-46c9-890c-6adbc07dec2d,The Creature from Jekyll Island,G. Edward Griffin,False,False,,,,1,
+c103e617-aead-4582-93ec-27fee6ce3919,Nicomachean Ethics,Aristotle,False,False,,,,2,
+c15ee22b-8663-4421-b554-4576f9ca75b0,The Three-Body Problem,Liu Cixin,False,False,,,,4,
+c2873447-212c-4b29-9e00-de58e6ff3294,Collected Fictions,Jorge Luis Borges,False,False,,,,3,
+c375b793-ebad-4091-8387-b73d7719393d,Ensel und Krete,Walter Moers,True,False,,,,1,
+c407e3e9-b289-40a9-88d1-07d87e1f3902,1 2 3 Infinity,George Gamow,False,False,,,,1,
+c69eb772-a63a-4e62-9d80-d0588c1e45c0,Eragon,Christopher Paolini,False,True,,,,2,
+c77758e8-51b7-49c9-80bb-58c7abae4b3e,The Holographic Universe,Michael Talbot,False,False,,,,2,
+c87127a6-4dde-4604-968e-3ba395f61dac,Sprint,Jake Knapp,False,False,,,,1,
+c992e59f-56c4-4f91-9c90-36fb7459be9f,Simulacra and Simulation,Jean Baudrillard,False,False,,,,1,
+cbe32c46-3b3f-4e0a-ac0f-17c40cbf3fe5,Life 3.0,Max Tegmark,False,False,,,,1,
+cc478127-2b2c-4d4e-9a16-e381345fdc26,The Light Pirate,Lily Brooks-Dalton,False,False,,,,2,
+ccc9d5f2-f0f4-43c7-a1b0-a0c5eef96726,Emblems of Mind,Edward Rothstein,False,False,,,,1,
+cd2d060c-fed0-4e55-bfa4-e37e88441b3e,The Hunger Games,Suzanne Collins,True,False,,,,3,
+cf8ea63c-d8ff-4f91-8218-460c3e8b29cb,The Most Good You Can Do,Peter Singer,False,False,,,,2,
+d281d5a7-c086-4698-a502-e6a471f0b28c,War Is a Racket,Smedley Butler,False,False,,,,2,
+d2c4ab05-2aca-432d-a11d-2fb9ef166837,Plato's Republic,Plato,False,False,,,,3,
+d3d0d5b6-27bb-459d-9f6e-88576ef69609,Tao Te Ching,Lao Tzu,False,False,,,,3,
+d40ff07d-1ff9-48a2-8811-54dcabe9fe10,Fewer Better Things,Glenn Adamson,False,False,,,,2,
+d47e9414-9252-4db9-86cd-a4dc57d48e31,The Old Man and the Sea,Ernest Hemingway,False,True,,,,1,
+d585117b-c4ab-4b0d-bcb3-46715894f86e,Catch-22,Joseph Heller,False,False,,,,1,
+d7608041-795a-4272-9a86-d5c9402d945d,Barbarian Days,William Finnegan,True,False,,,,0,
+d76d67c5-3883-4616-932b-84041376e64c,Slaughterhouse-Five,Kurt Vonnegut,False,False,,,,4,https://covers.openlibrary.org/b/id/12727001-M.jpg
+d8fa5abb-b9f7-4a2f-bc78-62bdc4083505,The Worldly Philosophers,Robert L. Heilbroner,False,False,,,,1,
+db15e0b5-4c2f-4f67-ae9f-846ccd659ef3,The 48 Laws of Power,Robert Greene,False,False,,,,1,
+de82c8f7-1db2-4914-9ac6-863228bc2ec6,Project Hail Mary,Andy Weir,False,False,,,,4,
+e0df2dd2-5c80-48f6-b68d-a716b6507496,Mindfulness,Ellen J. Langer,False,False,,,,1,
+e0fa3f9c-a038-49bd-9034-2231de4eec1c,The Power of Control,Tom Pane,False,False,,,,2,
+e25c4606-35ba-409d-b79c-2d766d1c968f,Out of the Silent Planet,C.S. Lewis,True,False,,,,0,
+e48beb7f-2fc1-4c71-a138-3f9ab6a0f64f,The Trial,Franz Kafka,False,False,,,,3,
+e71b91df-3975-4061-a114-270d45125bf1,The Fall,Albert Camus,False,False,,,,3,
+ef5580ca-84b1-459f-bf7d-8e4b3776d150,Atlas Shrugged,Ayn Rand,False,False,,,,3,
+f420d363-33a6-4a5f-9950-7b9a958f1438,The Beginning of Infinity,David Deutsch,False,False,,,,2,
+f5ae4df6-1cad-4cb6-a30f-92baaa8f9b3d,Inspired,Marty Cagan,False,False,,,,1,
+f5d83980-cb8c-47fb-b08d-a6ae7715433d,Hegel,Peter Singer,False,False,,,,2,
+fc443632-71c0-485a-89fd-1637725ab569,Rarotonga,Christian Williams,False,False,,,,4,
+ffd44cd8-634d-42de-9332-d5454c914a74,Stranger in a Strange Land,Robert A. Heinlein,False,False,,,,3,

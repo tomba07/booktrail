@@ -144,6 +144,17 @@ annotate service.Books with @(
             },
             {
                 $Type : 'UI.DataField',
+                Label : 'Started',
+                Value : startedAt,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'Finished on',
+                Value : finishedAt,
+                ![@UI.Hidden] : { $edmJson : { $Not : { $Path : 'finished' } } },
+            },
+            {
+                $Type : 'UI.DataField',
                 Label : 'Rating',
                 Value : rating,
                 ![@UI.Hidden] : true,
@@ -196,6 +207,8 @@ annotate service.Books with {
     author    @Common.Label : 'Author';
     read      @Common.Label : 'Read';
     listened  @Common.Label : 'Listened';
+    startedAt  @Common.Label : 'Started';
+    finishedAt @Common.Label : 'Finished on';
     finished  @Common.Label : 'Finished';
     rating    @(Common.Label : 'Rating', UI.Hidden : { $edmJson : { $Not : { $Path : 'read' } } });
     priority  @(
