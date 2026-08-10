@@ -250,6 +250,10 @@
                       "press": "com.mteschke.booktrail.booktrail.ext.SuggestActions.onSuggestInfo",
                       "text": "Suggest Info",
                       "enabled": "{= ${ui>/isEditable} !== true }"
+                    },
+                    "availabilityInfo": {
+                      "press": "com.mteschke.booktrail.booktrail.ext.AvailabilityActions.onCheckAvailability",
+                      "text": "Check Availability"
                     }
                   }
                 }

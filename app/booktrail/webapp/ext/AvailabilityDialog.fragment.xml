@@ -1,0 +1,126 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="availabilityDialog"
+        title="Mountain View Library"
+        contentWidth="32rem">
+
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+                <!-- Loading / error status -->
+                <Text
+                    text="{availability>/status}"
+                    visible="{= !!${availability>/status} }"
+                    class="sapUiTinyMarginBottom" />
+
+                <!-- Loading -->
+                <BusyIndicator
+                    visible="{availability>/loading}"
+                    class="sapUiSmallMarginBottom" />
+
+                <!-- Result -->
+                <VBox
+                    visible="{= !${availability>/loading} &amp;&amp; !!${availability>/title} }">
+
+                    <!-- Book -->
+                    <HBox
+                        alignItems="Start"
+                        class="sapUiSmallMarginBottom">
+
+                        <Image
+                            src="{availability>/coverUrl}"
+                            visible="{= !!${availability>/coverUrl} }"
+                            width="5rem"
+                            densityAware="false"
+                            class="sapUiSmallMarginEnd" />
+
+                        <VBox>
+                            <Title
+                                text="{availability>/title}"
+                                level="H4" />
+
+                            <Text
+                                text="{availability>/author}"
+                                visible="{= !!${availability>/author} }" />
+
+                            <ObjectStatus
+                                text="{availability>/availabilityText}"
+                                state="{availability>/availabilityState}"
+                                class="sapUiTinyMarginTop" />
+                        </VBox>
+                    </HBox>
+
+                    <!-- Location -->
+                    <VBox
+                        visible="{= !!${availability>/location} }"
+                        class="sapUiSmallMarginBottom">
+
+                        <Title text="Location" level="H5" />
+
+                        <Text text="{availability>/location}" />
+
+                        <ObjectAttribute
+                            title="Call number"
+                            text="{availability>/callNumber}"
+                            visible="{= !!${availability>/callNumber} }" />
+                    </VBox>
+
+                    <!-- Editions -->
+                    <VBox
+                        visible="{= ${availability>/editions/length} > 0 }">
+
+                        <Title text="Editions" level="H5" />
+
+                        <List
+                            items="{availability>/editions}"
+                            showSeparators="Inner">
+
+                            <CustomListItem>
+                                <HBox
+                                    justifyContent="SpaceBetween"
+                                    alignItems="Center"
+                                    width="100%"
+                                    class="sapUiTinyMarginTop sapUiTinyMarginBottom">
+
+                                    <VBox width="75%">
+                                        <Text
+                                            text="{availability>edition}"
+                                            visible="{= !!${availability>edition} }" />
+
+                                        <Text
+                                            text="{availability>publicationDate}"
+                                            visible="{= !!${availability>publicationDate} }"
+                                            class="sapUiTinyMarginTop" />
+                                    </VBox>
+
+                                    <ObjectStatus
+                                        text="{availability>statusText}"
+                                        state="{availability>state}" />
+
+                                </HBox>
+                            </CustomListItem>
+                        </List>
+                    </VBox>
+
+                </VBox>
+
+                <!-- Empty state -->
+                <Text
+                    text="No physical copy found at Mountain View Library."
+                    visible="{= !${availability>/loading} &amp;&amp; !${availability>/title} &amp;&amp; !${availability>/status} }"
+                    class="sapUiSmallMarginTop" />
+
+            </VBox>
+        </content>
+
+        <endButton>
+            <Button
+                text="Close"
+                press=".onCloseAvailability" />
+        </endButton>
+
+    </Dialog>
+</core:FragmentDefinition>
