@@ -1,3 +1,6 @@
+Improve Availability Check
+ - author name
+
 Properties:
 - Quotes/Notes?
 
