@@ -106,7 +106,7 @@ annotate service.Books with @(
         {
             $Type : 'UI.ReferenceFacet',
             Target : '@UI.DataPoint#Rating',
-            ![@UI.Hidden] : { $edmJson : { $Not : { $Path : 'rating' } } },
+            ![@UI.Hidden] : { $edmJson : { $Not : { $Path : 'finished' } } },
         },
         {
             $Type : 'UI.ReferenceFacet',
@@ -160,7 +160,7 @@ annotate service.Books with @(
         {
             $Type : 'UI.ReferenceFacet',
             ID : 'StatusFacet',
-            Label : 'Status',
+            Label : 'Details',
             Target : '@UI.FieldGroup#Status',
         },
         {
@@ -204,7 +204,7 @@ annotate service.Books with {
     listened  @Common.Label : 'Listened';
     finishedAt @Common.Label : 'Finished on';
     finished  @Common.Label : 'Finished';
-    rating    @(Common.Label : 'Rating', UI.Hidden : { $edmJson : { $Not : { $Path : 'read' } } });
+    rating    @(Common.Label : 'Rating', UI.Hidden : { $edmJson : { $Not : { $Path : 'finished' } } });
     priority  @(
         Common.Label : 'Priority',
         UI.Hidden : false
@@ -229,7 +229,6 @@ annotate service.Tags with @(
         Data : [{
             $Type : 'UI.DataField',
             Value : name,
-            Label : 'Name',
         }],
     },
     UI.Facets : [{
@@ -241,7 +240,8 @@ annotate service.Tags with @(
 );
 
 annotate service.Tags with {
-    name @Common.Label : 'Tag';
+    ID   @UI.Hidden;
+    name @Common.Label : 'Name';
 };
 
 annotate service.Books with @(

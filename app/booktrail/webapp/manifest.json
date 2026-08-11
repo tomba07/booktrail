@@ -270,7 +270,7 @@
                     "CustomRating": {
                       "template": "com.mteschke.booktrail.booktrail.ext.RatingField",
                       "label": "Rating",
-                      "visible": "{read}"
+                      "visible": "{finished}"
                     },
                     "CustomPriority": {
                       "template": "com.mteschke.booktrail.booktrail.ext.PriorityField",
