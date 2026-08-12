@@ -1,25 +1,35 @@
-# Getting Started
+# Booktrail
 
-Welcome to your new project.
+A SAP CAP and Fiori Elements app for personal book tracking.
 
-It contains these folders and files, following our recommended project layout:
+## Development
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+```bash
+npm run watch-booktrail
+```
 
+## Deployment
 
-## Next Steps
+Booktrail owns only its app container and persistent app data.
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+```bash
+deploy/update-vm.sh
+```
 
+The script syncs this repo to `/opt/apps/booktrail` on the VM, rebuilds the Booktrail image, and restarts the Booktrail stack.
 
-## Learn More
+Shared VM infrastructure, including Caddy routes and the external Docker network named `web`, lives in the sibling `mteschke-vm-infra` repo.
 
-Learn more at https://cap.cloud.sap/docs/get-started/.
+## GitHub Actions
+
+The deploy workflow expects these repository secrets:
+
+```text
+VM_HOST
+VM_USER
+VM_SSH_KEY
+```
+
+On each push to `main`, GitHub syncs this repo to `/opt/apps/booktrail`, rebuilds the Booktrail Docker image on the VM, and restarts the app.
+
+Use `deploy/drop-db.sh` only when intentionally wiping the production SQLite database.

@@ -1,0 +1,66 @@
+name: Deploy Booktrail
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure SSH
+        env:
+          VM_HOST: ${{ secrets.VM_HOST || '165.227.2.163' }}
+          VM_USER: ${{ secrets.VM_USER || 'root' }}
+          VM_SSH_KEY: ${{ secrets.VM_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          : "${VM_HOST:?Set the VM_HOST repository secret}"
+          : "${VM_SSH_KEY:?Set the VM_SSH_KEY repository secret}"
+
+          ssh_host="$VM_HOST"
+          ssh_user="$VM_USER"
+
+          if [[ "$ssh_host" == *@* ]]; then
+            [ -n "$ssh_user" ] || ssh_user="${ssh_host%@*}"
+            ssh_host="${ssh_host#*@}"
+          fi
+
+          : "${ssh_user:?Set VM_USER, or include the user in VM_HOST as user@host}"
+
+          mkdir -p ~/.ssh
+          printf '%s\n' "$VM_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$ssh_host" >> ~/.ssh/known_hosts
+
+          {
+            echo "VM_SSH_HOST=$ssh_host"
+            echo "VM_SSH_USER=$ssh_user"
+            echo "VM_SSH_TARGET=$ssh_user@$ssh_host"
+          } >> "$GITHUB_ENV"
+
+      - name: Sync app
+        run: |
+          ssh -i ~/.ssh/deploy_key "$VM_SSH_TARGET" "mkdir -p /opt/apps/booktrail"
+
+          rsync -az --delete \
+            --exclude='.git' \
+            --exclude='node_modules' \
+            --exclude='deploy/.env' \
+            -e "ssh -i ~/.ssh/deploy_key" \
+            ./ "$VM_SSH_TARGET:/opt/apps/booktrail/"
+
+      - name: Rebuild and restart
+        run: |
+          ssh -i ~/.ssh/deploy_key "$VM_SSH_TARGET" '
+            set -euo pipefail
+            cd /opt/apps/booktrail/deploy
+            docker compose up -d --build
+            docker compose ps
+          '

@@ -1,3 +1,5 @@
+name: booktrail
+
 services:
   app:
     build:
@@ -17,6 +19,8 @@ services:
 
 volumes:
   booktrail_data:
+    name: deploy_booktrail_data
+    external: true
 
 networks:
   web:
