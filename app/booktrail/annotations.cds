@@ -209,8 +209,6 @@ annotate service.Books with {
     );
 };
 
-annotate service.Books with @Common.SemanticKey : [title];
-
 annotate service.Tags with @(
     UI.HeaderInfo : {
         TypeName : 'Tag',
@@ -275,4 +273,3 @@ annotate service.Books_Tags with {
         }
     );
 };
-
