@@ -242,6 +242,17 @@ annotate service.Tags with {
 annotate service.Books with @(
     Capabilities.FilterRestrictions : {
         NonFilterableProperties : [ IsActiveEntity ]
+    },
+    Capabilities.NavigationRestrictions : {
+        $Type : 'Capabilities.NavigationRestrictionsType',
+        RestrictedProperties : [{
+            $Type : 'Capabilities.NavigationPropertyRestriction',
+            NavigationProperty : DraftAdministrativeData,
+            FilterRestrictions : {
+                $Type : 'Capabilities.FilterRestrictionsType',
+                Filterable : false,
+            },
+        }],
     }
 );
 
