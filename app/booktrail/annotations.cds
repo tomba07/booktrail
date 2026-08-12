@@ -131,7 +131,6 @@ annotate service.Books with @(
                 $Type : 'UI.DataField',
                 Label : 'Cover URL',
                 Value : coverUrl,
-                ![@UI.Hidden] : { $edmJson : { $Not : { $Path : 'IsActiveEntity' } } },
             },
             {
                 $Type : 'UI.DataField',
