@@ -2,7 +2,7 @@ using CatalogService as service from '../../srv/catalog-service';
 annotate service.Books with @(
     UI.SelectionFields : [
         finished,
-        author,
+        tags.tag_ID,
     ],
     UI.PresentationVariant : {
         SortOrder : [{
